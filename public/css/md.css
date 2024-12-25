@@ -1,153 +1,39 @@
 @media (max-width: 991.98px) {
-  .nav-item {
-    padding-bottom: 20px;
+  .section-hero__experiance {
+    flex-direction: column;
   }
-  .navbar-nav .nav-item:first-child {
-    padding-top: 30px;
-  }
-
-  .section-hero__des.des-1 {
-    display: none;
-  }
-  .section-hero__des.des-2 {
-    display: none;
-  }
-  .section-hero__btn-full-bio {
-    display: none;
-  }
-  .section-hero__start-video {
-    left: 30px;
-    bottom: 50px;
-  }
-  .section-films__slider-wrapper {
-    min-height: 150px;
-  }
-  .section-films .row {
+  .section-hero__experience--experience-section.extend_1 {
     justify-content: center;
-  }
-  .section-moreinfo2__img-wrap {
-    padding-top: 30px;
-  }
-  .section-moreinfo2 {
-    padding: 40px 0 40px 0;
-  }
-  .section-coach__side-img {
-    padding-top: 50px;
-  }
-  .section-coach__middle-line {
-    border-left: 1px solid #979797;
-    width: 1%;
-  }
-
-  .section-coach__controls {
-    bottom: 0px;
-  }
-  .section-banner__text-wrap h1 {
-    font-size: 50px;
-    color: var(--tertiary-text-color);
-  }
-  .section-tvshow__topcard {
-    width: 30%;
-  }
-  .section-tvshow__bottom-card {
-    width: 100%;
-  }
-  .section-hero__video-wrap img {
-    width: 600px;
-    height: auto;
-  }
-  .section-hero h1 {
-    font-size: 52px;
-  }
-  .section-hero h2 {
-    font-size: 28px;
-  }
-  .section-hero p {
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-  .section-hero__video-wrap img {
-    bottom: -350px;
-  }
-  .section-about {
-    padding: 250px 0px 150px 0px;
-  }
-  .section-privilage__img-wrap {
-    margin-bottom: 100px;
-  }
-  .section-chormbook-mobile {
-    display: flex;
-    justify-content: center;
-  }
-  .section-chrombook__img-mobile {
-    margin-bottom: 30px;
-  }
-  .section-chrombook h2,
-  h1,
-  p {
-    /* text-align: center; */
-  }
-  .section-usecase__des {
-    text-align: start;
-  }
-  .section-usecase__point-des {
-    text-align: start;
-  }
-  .section-features__navigation-section {
-    padding: 40px 0px;
-  }
-  .section-features__img-type-1 img {
-    width: 400px;
-    height: auto;
-  }
-  .section-features__img-type-2 img {
-    width: 400px;
-    height: auto;
-  }
-  .section-features__slide-des {
-    text-align: start;
-  }
-  .section-features__content-section {
-    padding: 30px;
-  }
-  .section-about__card.v2 {
     align-items: center;
   }
-  .section-about__card-des.v2 {
+  .section-hero__experience-number {
     text-align: center;
   }
-  .svg-warp {
-    display: none;
+  .section-hero__experience-des {
+    text-align: center;
   }
-  .content {
+  .section-hero__experience--experience-section {
+    flex: 1;
+    border-right: none;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #dedede;
   }
-  .section-footer__footer-des {
-    padding-bottom: 30px;
+  .section-keyfeature__card {
+    margin-bottom: 20px;
   }
-  /* model */
-  .modal .forminput {
-    width: 475px !important;
+  .section-keyfeature__card-title {
+    font-size: 20px;
   }
-  .modal .forminputtext {
-    width: 475px !important;
+  .section-keyfeature__card {
+    gap: 20px;
   }
-  .modal .formdrown {
-    width: 475px !important;
+  .section-keyfeature__card-des {
+    font-size: 14px;
   }
-  .modal .file-upload-wrap {
-    width: 475px !important;
-  }
-  .modal-content {
-    width: 80%;
-    border-radius: 30px;
-    max-height: 62vh;
-  }
-  .section-footer__footer-des {
-    text-align: center;
+  .section-pricing__pricing-card {
+    margin-bottom: 20px;
   }
 }

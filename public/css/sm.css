@@ -1,269 +1,59 @@
 @media (max-width: 767.98px) {
-  .section-hero {
-    padding-top: 90px;
+  .section-hero__title {
+    font-size: 36px;
   }
-  .section-hero__start-video img {
-    width: 30px;
+  .section-hero__video-frame {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
     height: auto;
+    top: 1%;
   }
-  .section-hero__start-video {
+  .section-hero__button-wrap {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .section-hero__backgound-text-wrap {
+    padding-bottom: 370px;
+  }
+  .section-hero__experience-text {
+    font-size: 22px;
+    text-align: center;
+  }
+  .section-pricing__toggle-btn.active {
+    background: var(--main-liner-color);
+    display: flex;
+    width: 160px;
+    height: 70px;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #f3f3f3;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 40px;
+  }
+  .section-pricing__toggle-btn {
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    width: 160px;
+  }
+  .section-pricing {
+    margin: 20px 1%;
+    background: #016fef;
+  }
+  .question-text {
+    font-size: 18px;
+  }
+  .answer-text {
     font-size: 16px;
   }
-  .section-films__film-container .img-1.active {
-    border: 3px solid #fbc02d;
-    margin: 10px 5px;
-  }
-
-  .section-films__film-container .img-2.active {
-    border: 3px solid #fbc02d;
-    margin: 10px 5px;
-  }
-
-  .section-films__film-container .img-3.active {
-    border: 3px solid #fbc02d;
-    margin: 10px 5px;
-  }
-
-  .section-films__film-container .img-1 {
-    margin: 10px 5px;
-  }
-
-  .section-films__film-container .img-2 {
-    margin: 10px 5px;
-  }
-
-  .section-films__film-container .img-3 {
-    margin: 10px 5px;
-  }
-
-  .section-films__film-container .img-1 img,
-  .section-films__film-container .img-2 img,
-  .section-films__film-container .img-3 img {
-    width: 100px;
-    height: 150px;
-  }
-
-  .section-films__film-container .img-1.active img,
-  .section-films__film-container .img-2.active img,
-  .section-films__film-container .img-3.active img {
-    width: 120px;
-    height: 180px;
-  }
-  .section-films__slider-wrapper {
-    min-height: 250px;
-  }
-  .section-testimonials__row {
-    flex-direction: column;
-  }
-  .section-testimonials__profile-side {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-  }
-  .section-testimonials__content-side {
-    width: 100%;
-    text-align: center;
-    padding-left: 0px;
-    padding-bottom: 35px;
-  }
-  .section-testimonials {
-    padding: 0px 0px;
-  }
-  .section-coach__second-row {
-    flex-direction: column;
-    padding: 0px;
-  }
-  .section-coach__profile-side {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-  .section-coach__middle-line {
-    display: none;
-  }
-  .section-coach__content-side {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    min-height: 600px;
-    text-align: center;
-  }
-  .section-coach__testimonial-2 img {
-    width: 100px;
-    height: 100px;
-  }
-  .section-coach__testimonial-1.active img {
-    width: 110px;
-    height: 110px;
-  }
-  .section-coach__testimonial-2.active img {
-    width: 110px;
-    height: 110px;
-  }
-  .section-coach__testimonial-1 img {
-    width: 100px;
-    height: 100px;
-  }
-  .section-banner__text-wrap h1 {
-    font-size: 30px;
-    color: var(--tertiary-text-color);
-  }
-  .section-banner__text-wrap {
-    position: absolute;
-    top: 20px;
-    width: fit-content;
-  }
-  .section-banner__text-wrap h1 {
-    letter-spacing: 0px;
-  }
-  .section-tvshow__topcard {
-    width: 50%;
-  }
-  .section-hero__img-wrap {
-    display: none;
-  }
-  .section-hero__video-wrap img {
-    width: 300px;
-    height: auto;
-  }
-  .section-hero {
-    padding-top: 160px;
-  }
-  .section-hero h1 {
-    text-align: center;
-  }
-  .section-hero h2 {
-    text-align: center;
-  }
-  .section-hero p {
-    text-align: center;
-  }
-  .request-demo-btn.v2 {
-    margin: 0 auto;
-  }
-  .section-hero {
-    height: 600px;
-    padding-top: 150px;
-  }
-  .section-hero__shape-maker-left,
-  .section-hero__shape-maker-right {
-    display: none;
-  }
-  .section-hero__video-wrap img {
-    bottom: -200px;
-  }
-  .section-hero__video-wrap img {
-    width: 350px;
-    height: auto;
-  }
-  .title {
-    font-size: 36px;
-    font-weight: 700;
-  }
-  .section-privilage__sub-row {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-  }
-  .section-privilage__sub-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 30px;
-  }
-  .section-privilage__img-wrap {
-    margin-bottom: 50px;
-  }
-  .section-privileage__role-des {
-    text-align: center;
-  }
-  .section-privilage__sub-row.first {
-    padding-bottom: 0px;
-  }
-  .section-chormbook-mobile {
-    padding: 30px;
-    border-radius: 0px;
-  }
-  .nav-buttons {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .nav-buttons.actives {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .section-features__img-type-1 img {
-    width: 100px;
-    height: auto;
-  }
-  .section-features__img-type-2 img {
-    width: 100px;
-    height: auto;
-  }
-  .nav-button.active {
-    margin-bottom: 20px;
-  }
-  .nav-button {
-    margin-bottom: 20px;
-  }
-  .section-features__img-type-1 img {
-    width: 300px;
-    height: auto;
-  }
-  .section-features__img-type-2 img {
-    width: 300px;
-    height: auto;
-  }
-  .section-features .title {
-    text-align: center !important;
-  }
-  .section-features .tag {
-    margin: 0 auto;
-  }
-  .section-faq__main-title {
-    text-align: center;
-  }
-  /* model */
-  .modal .forminput {
-    width: 325px !important;
-  }
-  .modal .forminputtext {
-    width: 325px !important;
-  }
-  .modal .formdrown {
-    width: 325px !important;
-  }
-  .modal .file-upload-wrap {
-    width: 325px !important;
-  }
-  .modal .file-upload-wrap-inner {
-    width: 280px;
-  }
-  .modal-content {
-    margin: 20% auto;
-    padding: 10px;
-    width: 98%;
-    border-radius: 15px;
-    max-height: 82vh;
-  }
-
-  .contact-set {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 50px;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .faq-card {
+    padding: 20px;
   }
 }

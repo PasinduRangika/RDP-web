@@ -1,156 +1,16 @@
 @media (max-width: 1199.98px) {
-  .section-hero__des.des-2 {
-    position: absolute;
-    top: 220px;
+  .section-hero__backgound-text-wrap {
+    padding-bottom: 600px;
   }
-  .section-hero__btn-full-bio {
-    top: 340px;
+  .section-pricing {
+    margin: 20px 2%;
+    background: #016fef;
   }
-  .section-hero__start-video {
-    right: 10px;
-    bottom: 50px;
+  .section-pricing__pricing-card {
+    height: 600px;
+    padding: 20px 20px;
   }
-
-  .section-fims__right-section {
-    padding: 88px 25px 40px 25px;
-  }
-  .section-form {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .section-form__side {
-    display: block;
-    width: 100%;
-    height: 700px;
-  }
-  .section-form__form-contact {
-    background-color: #ebeff9;
-    padding: 50px 10px;
-    position: relative;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-  .section-banner__img-wrap {
-    margin-top: -20px;
-  }
-  .section-banner__text-wrap {
-    position: absolute;
-    top: 60px;
-    width: fit-content;
-  }
-  .section-banner__text-wrap h1 {
-    font-size: 60px;
-    color: var(--tertiary-text-color);
-  }
-  .section-hero__video-wrap img {
-    width: 800px;
-    height: auto;
-  }
-  .section-hero {
-    height: 800px;
-    padding-top: 150px;
-  }
-  .section-about__card {
-    margin-bottom: 20px;
-  }
-  .section-privilage {
-    padding: 0px 0px 60px 0px;
-  }
-  .section-privilage__sub-container {
-    width: fit-content;
-  }
-  .section-chormbook-mobile {
-    background-color: #497ff9;
-    border-radius: 20px;
-    display: flex;
-    padding: 50px;
-    justify-content: space-between;
-  }
-  .section-chrombook__img-mobile {
-    background-color: #f3f5ff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  .section-chrombook {
-    padding: 40px 0px 150px 0px;
-  }
-  .section-chrombook__img-mobile img {
-    width: 100%;
-  }
-  .section-features__img-type-1 img {
-    width: 340px;
-    height: auto;
-  }
-  .section-features__img-type-2 img {
-    width: 340px;
-    height: auto;
-  }
-  .section-features__des {
-    text-align: start;
-  }
-  .section-faq__lap-group {
-    width: 220px;
-    height: 160px;
-  }
-  .section-security {
-    padding-bottom: 120px;
-  }
-  .section-faq__title-ready-mobile {
-    text-align: center !important;
-    color: var(--tertiary-text-color) !important;
-  }
-  .section-faq__learn-more-content-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .contact-us-mobile {
-    background-color: #3f43dc;
-    margin-bottom: 70px;
-    padding: 50px 0px;
-  }
-  .section-faq__lap-group {
-    margin-bottom: 30px;
-    width: 300px;
-    height: auto;
-  }
-  .section-faq {
-    padding: 60px 0px 0px 0px;
-    position: relative;
-    margin-bottom: 0px;
-  }
-  .section-faq__des-ready-mobile {
-    padding-bottom: 20px;
-    color: var(--tertiary-text-color) !important;
-  }
-  .section-faq__des-ready-mobile {
-    text-align: center;
-  }
-  /* model */
-  .modal .forminput {
-    width: 425px !important;
-  }
-  .modal .forminputtext {
-    width: 425px !important;
-  }
-  .modal .formdrown {
-    width: 425px !important;
-  }
-  .modal .file-upload-wrap {
-    width: 425px !important;
-  }
-
-  .modal .file-upload-wrap-inner {
-    width: 350px;
-  }
-  .modal-content {
-    width: 60%;
-    border-radius: 30px;
-    max-height: 62vh;
+  .section-pricing__pricing-card.pro {
+    height: 630px;
   }
 }
