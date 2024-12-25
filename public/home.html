@@ -716,14 +716,14 @@
           <div class="section-faq__faq-container">
             <div>
               <div class="row justify-content-center faq-card-wrap">
-                <div class="col-12">
+                <div class="col-10">
                   <div class="faq-card">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                      <img class="arrow" src="./wp-content/uploads/caprome-cross-icon.png" alt="Arrow" />
                       <span class="question-text">How does Caprome support educational settings?</span>
+                      <img class="arrow" src="../wp-content/uploads/rdp-cross-icon.png" alt="Arrow" />
                     </div>
                     <div class="faq-answer">
-                      <div class="p-1">
+                      <div class="p-1 answer-text">
                         Caprome is designed with education in mind. It allows teachers to monitor student screens in
                         real-time, track engagement, and provide feedback, all within a safe and secure platform.
                         Caprome also enables parents to stay informed and promotes responsible screen usage among
@@ -734,69 +734,17 @@
                 </div>
               </div>
               <div class="row justify-content-center faq-card-wrap">
-                <div class="col-12">
+                <div class="col-10">
                   <div class="faq-card">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                      <img class="arrow" src="./wp-content/uploads/caprome-cross-icon.png" alt="Arrow" />
                       <span class="question-text">Can I monitor students in real-time?</span>
+                      <img class="arrow" src="../wp-content/uploads/rdp-cross-icon.png" alt="Arrow" />
                     </div>
                     <div class="faq-answer">
-                      <div class="p-1">
+                      <div class="p-1 answer-text">
                         Yes! Caprome offers real-time screen monitoring, allowing teachers and administrators to observe
                         student activities instantly. This feature helps ensure that students stay focused during
                         lessons and can quickly intervene if a student becomes distracted.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center faq-card-wrap">
-                <div class="col-12">
-                  <div class="faq-card">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                      <img class="arrow" src="./wp-content/uploads/caprome-cross-icon.png" alt="Arrow" />
-                      <span class="question-text">Is Caprome compatible with multiple devices?</span>
-                    </div>
-                    <div class="faq-answer">
-                      <div class="p-1">
-                        Absolutely. Caprome is optimized for use on Chromebooks and is also compatible with other
-                        devices through our web-based application. This flexibility makes it easy to implement Caprome
-                        in both traditional classrooms and remote learning environments.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center faq-card-wrap">
-                <div class="col-12">
-                  <div class="faq-card">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                      <img class="arrow" src="./wp-content/uploads/caprome-cross-icon.png" alt="Arrow" />
-                      <span class="question-text">How secure is my data with Caprome?</span>
-                    </div>
-                    <div class="faq-answer">
-                      <div class="p-1">
-                        Security is our top priority. Caprome uses advanced encryption to protect your data, and we
-                        follow strict access control measures to ensure that only authorized users can access sensitive
-                        information. Our platform is also compliant with educational data protection regulations, giving
-                        you peace of mind.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center faq-card-wrap">
-                <div class="col-12">
-                  <div class="faq-card">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                      <img class="arrow" src="./wp-content/uploads/caprome-cross-icon.png" alt="Arrow" />
-                      <span class="question-text">How do I get started with a Caprome demo?</span>
-                    </div>
-                    <div class="faq-answer">
-                      <div class="p-1">
-                        Getting started is easy! Simply click the "Request Demo" button on our website, and our team
-                        will reach out to schedule a personalized demo. We’ll guide you through Caprome’s features and
-                        answer any questions you have about implementing it in your educational environment.
                       </div>
                     </div>
                   </div>
@@ -811,31 +759,170 @@
           const faqCard = element.parentElement;
           const faqAnswer = faqCard.querySelector(".faq-answer");
           const allFaqCards = document.querySelectorAll(".faq-card");
+
+          // Loop through all FAQ cards to reset styles for inactive ones
           allFaqCards.forEach((card) => {
+            const questionText = card.querySelector(".question-text");
+            const arrowIcon = card.querySelector(".arrow");
+
             if (card !== faqCard && card.classList.contains("active")) {
               card.classList.remove("active");
               const answer = card.querySelector(".faq-answer");
               answer.style.maxHeight = null;
               answer.style.paddingTop = null;
               answer.style.paddingBottom = null;
-              card.querySelector(".arrow").src = "./wp-content/uploads/caprome-cross-icon.png";
+              questionText.style.color = "#000"; // Reset color
+              arrowIcon.src = "../wp-content/uploads/rdp-cross-icon.png"; // Reset icon
             }
           });
+
+          // Toggle the current FAQ card
+          const questionText = faqCard.querySelector(".question-text");
+          const arrowIcon = faqCard.querySelector(".arrow");
           if (faqCard.classList.contains("active")) {
             faqCard.classList.remove("active");
             faqAnswer.style.maxHeight = null;
             faqAnswer.style.paddingTop = null;
             faqAnswer.style.paddingBottom = null;
-            faqCard.querySelector(".arrow").src = "./wp-content/uploads/caprome-cross-icon.png";
+            questionText.style.color = "#000"; // Reset color
+            arrowIcon.src = "../wp-content/uploads/rdp-cross-icon.png"; // Reset icon
           } else {
             faqCard.classList.add("active");
-            faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+            faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 10 + "px";
             faqAnswer.style.paddingTop = "10px";
             faqAnswer.style.paddingBottom = "10px";
-            faqCard.querySelector(".arrow").src = "./wp-content/uploads/caprome-dash-icon.png";
+            questionText.style.color = "#016FEF"; // Highlight color
+            arrowIcon.src = "../wp-content/uploads/rdp-cross-icon.png"; // Keep consistent icon logic
           }
         }
       </script>
+    </section>
+    <section class="section-footer">
+      <div class="container">
+        <div class="row section-footer__top-section">
+          <div class="col-4">
+            <img src="" alt="logo" />
+          </div>
+          <div class="col-4">
+            <div class="section-footer__navbar d-flex">
+              <div class="section-footer__nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </div>
+              <div class="section-footer__nav-item">
+                <a class="nav-link" href="#about">Features</a>
+              </div>
+              <div class="section-footer__nav-item">
+                <a class="nav-link" href="#use-cases">Pricing</a>
+              </div>
+              <div class="section-footer__nav-item">
+                <a class="nav-link" href="#features">Blog</a>
+              </div>
+              <div class="section-footer__nav-item">
+                <a class="nav-link" href="#features">FAQs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <div>
+              <p class="footer-setion__top-text">Join our newsletter</p>
+            </div>
+          </div>
+        </div>
+        <div class="row section-footer__middle-section">
+          <div class="col-6">
+            <p class="section-footer__navbar-text">
+              Lorem ipsum dolor sit amet consectetur. Eget interdum turpis arcu fermentum aliquet mattis ridiculus
+              tincidunt egestas. Donec felis rhoncus sed nisl nam tempus urna id turpis. Nunc sit sed sodales morbi in
+              et volutpat facilisi aliquet. Volutpat sed vitae tincidunt egestas viverra curabitur.
+            </p>
+          </div>
+          <div class="col-6 section-footer__inputs">
+            <div class="section-footer__subcriber-wrap">
+              <input type="text" class="section-footer__subscriber-input" />
+              <button class="section-footer__subscriber-btn">Subscribe</button>
+            </div>
+            <div class="section-footer-socialmedia-wrap">
+              <div class="fb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M40 20C40 8.95437 31.0456 0 20 0C8.95437 0 0 8.95437 0 20C0 29.9825 7.31375 38.2567 16.875 39.757V25.7812H11.7969V20H16.875V15.5937C16.875 10.5812 19.8609 7.8125 24.4294 7.8125C26.6175 7.8125 28.9062 8.20312 28.9062 8.20312V13.125H26.3844C23.8998 13.125 23.125 14.6667 23.125 16.2484V20H28.6719L27.7852 25.7812H23.125V39.757C32.6862 38.2567 40 29.9827 40 20Z"
+                    fill="#1877F2"
+                  />
+                  <path
+                    d="M27.7852 25.7812L28.6719 20H23.125V16.2484C23.125 14.6666 23.8998 13.125 26.3844 13.125H28.9062V8.20312C28.9062 8.20312 26.6175 7.8125 24.4292 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7812H16.875V39.757C17.9088 39.919 18.9536 40.0002 20 40C21.0464 40.0002 22.0912 39.919 23.125 39.757V25.7812H27.7852Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z"
+                    fill="url(#paint0_radial_786_147)"
+                  />
+                  <path
+                    d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z"
+                    fill="url(#paint1_radial_786_147)"
+                  />
+                  <path
+                    d="M20.0014 4.375C15.758 4.375 15.2253 4.39359 13.5588 4.46938C11.8953 4.54563 10.7598 4.80891 9.76641 5.19531C8.73859 5.59438 7.86688 6.12828 6.99844 6.99703C6.12922 7.86562 5.59531 8.73734 5.195 9.76469C4.8075 10.7584 4.54391 11.8944 4.46906 13.557C4.39453 15.2238 4.375 15.7566 4.375 20.0002C4.375 24.2438 4.39375 24.7747 4.46938 26.4412C4.54594 28.1047 4.80922 29.2402 5.19531 30.2336C5.59469 31.2614 6.12859 32.1331 6.99734 33.0016C7.86563 33.8708 8.73734 34.4059 9.76438 34.805C10.7586 35.1914 11.8942 35.4547 13.5573 35.5309C15.2241 35.6067 15.7563 35.6253 19.9995 35.6253C24.2434 35.6253 24.7744 35.6067 26.4409 35.5309C28.1044 35.4547 29.2411 35.1914 30.2353 34.805C31.2627 34.4059 32.1331 33.8708 33.0012 33.0016C33.8705 32.1331 34.4042 31.2614 34.8047 30.2341C35.1887 29.2402 35.4525 28.1044 35.5306 26.4416C35.6055 24.775 35.625 24.2438 35.625 20.0002C35.625 15.7566 35.6055 15.2241 35.5306 13.5573C35.4525 11.8939 35.1887 10.7586 34.8047 9.76516C34.4042 8.73734 33.8705 7.86562 33.0012 6.99703C32.1322 6.12797 31.263 5.59406 30.2344 5.19547C29.2383 4.80891 28.1022 4.54547 26.4387 4.46938C24.772 4.39359 24.2414 4.375 19.9966 4.375H20.0014ZM18.5997 7.19078C19.0158 7.19016 19.48 7.19078 20.0014 7.19078C24.1734 7.19078 24.6678 7.20578 26.3153 7.28063C27.8387 7.35031 28.6656 7.60484 29.2164 7.81875C29.9456 8.10188 30.4655 8.44047 31.012 8.9875C31.5589 9.53438 31.8973 10.0552 32.1813 10.7844C32.3952 11.3344 32.65 12.1613 32.7194 13.6847C32.7942 15.3319 32.8105 15.8266 32.8105 19.9966C32.8105 24.1666 32.7942 24.6614 32.7194 26.3084C32.6497 27.8319 32.3952 28.6587 32.1813 29.2089C31.8981 29.9381 31.5589 30.4573 31.012 31.0039C30.4652 31.5508 29.9459 31.8892 29.2164 32.1725C28.6663 32.3873 27.8387 32.6413 26.3153 32.7109C24.6681 32.7858 24.1734 32.802 20.0014 32.802C15.8292 32.802 15.3347 32.7858 13.6877 32.7109C12.1642 32.6406 11.3373 32.3861 10.7861 32.1722C10.057 31.8889 9.53609 31.5505 8.98922 31.0036C8.44234 30.4567 8.10391 29.9372 7.82 29.2077C7.60609 28.6575 7.35125 27.8306 7.28188 26.3072C7.20703 24.66 7.19203 24.1653 7.19203 19.9927C7.19203 15.82 7.20703 15.328 7.28188 13.6808C7.35156 12.1573 7.60609 11.3305 7.82 10.7797C8.10328 10.0505 8.44234 9.52969 8.98938 8.98281C9.53641 8.43594 10.057 8.09734 10.7862 7.81359C11.337 7.59875 12.1642 7.34484 13.6877 7.27484C15.1291 7.20969 15.6877 7.19016 18.5997 7.18687V7.19078ZM28.342 9.78516C27.3069 9.78516 26.467 10.6242 26.467 11.6595C26.467 12.6947 27.3069 13.5345 28.342 13.5345C29.3772 13.5345 30.217 12.6947 30.217 11.6595C30.217 10.6244 29.3772 9.78453 28.342 9.78453V9.78516ZM20.0014 11.9759C15.5702 11.9759 11.9773 15.5688 11.9773 20.0002C11.9773 24.4316 15.5702 28.0227 20.0014 28.0227C24.4328 28.0227 28.0244 24.4316 28.0244 20.0002C28.0244 15.5689 24.4325 11.9759 20.0011 11.9759H20.0014ZM20.0014 14.7917C22.8778 14.7917 25.2098 17.1234 25.2098 20.0002C25.2098 22.8766 22.8778 25.2086 20.0014 25.2086C17.125 25.2086 14.7931 22.8766 14.7931 20.0002C14.7931 17.1234 17.1248 14.7917 20.0014 14.7917Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <radialGradient
+                      id="paint0_radial_786_147"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(10.625 43.0808) rotate(-90) scale(39.643 36.8711)"
+                    >
+                      <stop stop-color="#FFDD55" />
+                      <stop offset="0.1" stop-color="#FFDD55" />
+                      <stop offset="0.5" stop-color="#FF543E" />
+                      <stop offset="1" stop-color="#C837AB" />
+                    </radialGradient>
+                    <radialGradient
+                      id="paint1_radial_786_147"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(-6.70016 2.88141) rotate(78.681) scale(17.7206 73.045)"
+                    >
+                      <stop stop-color="#3771C8" />
+                      <stop offset="0.128" stop-color="#3771C8" />
+                      <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="linkend">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M37.0492 0.000151475H2.95082C2.17715 -0.00772217 1.43196 0.291639 0.87875 0.832548C0.325544 1.37346 0.00951189 2.11173 0 2.88538V37.1212C0.0112321 37.8937 0.32802 38.6303 0.881039 39.1698C1.43406 39.7093 2.17827 40.0077 2.95082 39.9999H37.0492C37.8229 40.006 38.5676 39.7056 39.1205 39.1644C39.6734 38.6231 39.9896 37.885 40 37.1113V2.87554C39.9862 2.10416 39.6685 1.36941 39.1159 0.830984C38.5634 0.292558 37.8207 -0.00601951 37.0492 0.000151475Z"
+                    fill="#0076B2"
+                  />
+                  <path
+                    d="M5.71823 14.7542H11.6559V33.859H5.71823V14.7542ZM8.68872 5.24609C9.36974 5.24609 10.0355 5.44808 10.6017 5.8265C11.1679 6.20493 11.6091 6.74278 11.8696 7.37202C12.1301 8.00127 12.198 8.69363 12.0649 9.36151C11.9318 10.0294 11.6036 10.6428 11.1219 11.1241C10.6401 11.6055 10.0263 11.9331 9.35833 12.0655C8.69031 12.198 7.99801 12.1294 7.36901 11.8683C6.74001 11.6072 6.20257 11.1655 5.82469 10.5989C5.4468 10.0323 5.24545 9.36643 5.2461 8.68541C5.24696 7.77295 5.61005 6.89815 6.25557 6.25325C6.9011 5.60834 7.77625 5.24609 8.68872 5.24609ZM15.3805 14.7542H21.0723V17.3771H21.151C21.9445 15.8755 23.8789 14.2919 26.7674 14.2919C32.7805 14.2788 33.8953 18.2362 33.8953 23.3673V33.859H27.9576V24.564C27.9576 22.3509 27.9182 19.5017 24.8723 19.5017C21.8264 19.5017 21.3084 21.9148 21.3084 24.4197V33.859H15.3805V14.7542Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-section__bottom-line"></div>
+            <div class="footer-section__bottom-line--text-wrap">
+              <p class="footer-section__bottom-line--text text-highlight">
+                All Rights are Reserved. RDP Powered by CODIMITE.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
