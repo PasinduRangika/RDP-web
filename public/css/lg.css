@@ -13,4 +13,7 @@
   .section-pricing__pricing-card.pro {
     height: 630px;
   }
+  .section-blog__blog-card {
+    margin-bottom: 40px;
+  }
 }

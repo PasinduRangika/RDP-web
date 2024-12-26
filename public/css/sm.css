@@ -56,4 +56,20 @@
   .faq-card {
     padding: 20px;
   }
+  .section-blog__blog-card {
+    margin-bottom: 40px;
+  }
+  .section-blog__blog-date {
+    text-align: center;
+  }
+  .section-blog__blog-title {
+    text-align: center;
+  }
+  .section-blog__blog-content {
+    text-align: center;
+  }
+  .section-blog__blog-readmore {
+    display: block;
+    text-align: center;
+  }
 }
