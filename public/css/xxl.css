@@ -250,6 +250,35 @@ html {
   padding: 40px 0px;
   border-radius: 20px;
   background: #016fef;
+  position: relative;
+}
+.frame-1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 202px;
+  height: 335px;
+}
+.frame-2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 331px;
+  height: 379px;
+}
+.frame-3 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 202px;
+  height: 335px;
+}
+.frame-4 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 331px;
+  height: 379px;
 }
 .section-pricing__pricing-row.active {
   display: flex;
@@ -273,6 +302,7 @@ html {
   padding: 4.5px 17.75px;
   gap: 8px;
   margin-bottom: 45px;
+  z-index: 0;
 }
 .pricing__title {
   color: #fff;
