@@ -81,7 +81,10 @@ get_header();
                         if (!empty($tags)):
                             foreach ($tags as $tag): ?>
                         <div class="section-blog-insights-list__tag-wrap">
-                            <p class="section-blog-insights-list__tag"><?php echo esc_html($tag->name); ?></p>
+                            <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>"
+                                class="section-blog-insights-list__tag">
+                                <?php echo esc_html($tag->name); ?>
+                            </a>
                         </div>
                         <?php endforeach; endif; ?>
                     </div>
@@ -131,7 +134,10 @@ get_header();
                         if (!empty($tags)):
                             foreach ($tags as $tag): ?>
                         <div class="section-blog-insights-list__tag-wrap">
-                            <p class="section-blog-insights-list__tag"><?php echo esc_html($tag->name); ?></p>
+                            <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>"
+                                class="section-blog-insights-list__tag">
+                                <?php echo esc_html($tag->name); ?>
+                            </a>
                         </div>
                         <?php endforeach; endif; ?>
                     </div>
@@ -177,7 +183,10 @@ get_header();
                     if ($tags):
                         foreach ($tags as $tag): ?>
                     <div class="section-blog-insights-list__tag-wrap mt-2">
-                        <p class="section-blog-insights-list__tag"><?php echo esc_html($tag->name); ?></p>
+                        <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>"
+                            class="section-blog-insights-list__tag">
+                            <?php echo esc_html($tag->name); ?>
+                        </a>
                     </div>
                     <?php endforeach; endif; ?>
                 </div>
