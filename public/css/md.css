@@ -36,4 +36,11 @@
   .section-pricing__pricing-card {
     margin-bottom: 20px;
   }
+  .section-blog-insights__title {
+    font-size: 36px;
+  }
+  .page-numbers {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }

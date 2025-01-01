@@ -808,6 +808,7 @@ html {
   background: #eaf0ff;
   border-radius: 23px;
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 .section-blog-insights-list__tag {
   font-size: 12px;
@@ -862,6 +863,7 @@ html {
   color: #016fef;
   font-weight: 600;
   padding-top: 10px;
+  text-decoration: none;
 }
 
 .section-blog-insights-list__blog-card {
@@ -922,4 +924,49 @@ html {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 30px;
+}
+
+.section-blog-insights-list__pagination-wrap {
+  padding: 20px 0;
+}
+
+.page-numbers {
+  display: inline-block;
+  margin: 0 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0b63e5;
+  background-color: #fff;
+  border: 2px solid #0b63e5;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.page-numbers.current {
+  color: #fff;
+  background-color: #0b63e5;
+  border: 2px solid #0b63e5;
+}
+
+.page-numbers:hover {
+  background-color: #f0f5ff;
+  color: #0b63e5;
+  border-color: #0b63e5;
+}
+
+.page-numbers.prev,
+.page-numbers.next {
+  font-weight: bold;
+  background-color: #0b63e5;
+  color: #fff;
+  border-color: #0b63e5;
+}
+
+.page-numbers.prev:hover,
+.page-numbers.next:hover {
+  background-color: #0058d1;
+  color: #fff;
+  border-color: #0058d1;
 }

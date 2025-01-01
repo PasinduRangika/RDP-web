@@ -16,4 +16,7 @@
   .section-blog__blog-card {
     margin-bottom: 40px;
   }
+  .section-blog-insights-list__latest-blog-card {
+    padding-top: 100px;
+  }
 }
