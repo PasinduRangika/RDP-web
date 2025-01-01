@@ -908,3 +908,18 @@ html {
   margin-bottom: 0px;
   font-weight: 500;
 }
+
+.section-blog-insights__tag {
+  position: relative;
+  padding: 60px 0px;
+  background-color: #016fef;
+  margin: 100px 0px 20px 0px;
+}
+.section-blog-insights__tag-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
