@@ -814,6 +814,7 @@ html {
   font-size: 12px;
   color: #407bff;
   margin-bottom: 0px;
+  text-decoration: none;
 }
 .section-blog-insights-list__blogcard-third-row {
   display: flex;
@@ -868,6 +869,11 @@ html {
 
 .section-blog-insights-list__blog-card {
   padding-bottom: 50px;
+}
+
+.section-blog-insights-list__blog-card.tagcard {
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .section-blog-insights-list__pagination-number-wrap {
