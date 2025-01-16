@@ -49,7 +49,7 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="../wp-content/uploads/Caprome-Leaning-Logo.png" alt="RDP Logo" />
+            <img src="../wp-content/uploads/RDP_Logo.png" alt="RDP Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -96,9 +96,11 @@
               <span class="text-highlight"> Anywhere, Anytime</span>
             </h1>
             <p class="section-hero__des">
-              Lorem ipsum dolor sit amet consectetur. Nulla sit adipiscing ornare erat nulla donec pellentesque
-              <br class="d-none d-xl-block" />
-              consequat. Eget cursus.
+              Unlock the power of seamless remote desktop access from any device, ensuring your work is always within
+              reach. <br class="d-none d-xl-block" />
+              Whether you're at the office, home, or on the go, our RDP Web Client delivers secure, fast, and reliable
+              access to<br class="d-none d-xl-block" />
+              your applications and resources
             </p>
             <div class="section-hero__button-wrap">
               <button class="btn-highlight">
@@ -110,10 +112,64 @@
       </div>
       <div class="container-fluid">
         <div class="section-hero__backgound-text-wrap">
-          <img src="../wp-content/uploads/Rdp_2.png" alt="" class="section-hero__video-frame" />
+          <div class="video-wrapper">
+            <div class="video-wrappner-inner">
+              <img src="../wp-content/uploads/Rdp_2.png" alt="" class="section-hero__video-frame" />
+              <video class="section-hero__video" controls id="videoElement">
+                <source src="../wp-content/uploads/RDP_Video_Demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="play-button" id="playButton">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="playIcon"
+                  width="120"
+                  height="120"
+                  viewBox="0 0 170 170"
+                  class="d-none d-md-block"
+                  fill="none"
+                >
+                  <g filter="url(#filter0_d_442_7257)">
+                    <circle cx="84.6747" cy="84.9999" r="25.6747" fill="#497FF9" />
+                    <path
+                      d="M77.1602 73.1681C77.1602 72.3983 77.9935 71.9172 78.6602 72.3021L98.3241 83.6551C98.9908 84.04 98.9908 85.0022 98.3241 85.3871L78.6602 96.7401C77.9935 97.125 77.1602 96.6439 77.1602 95.8741L77.1602 73.1681Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_442_7257"
+                      x="0.0999985"
+                      y="0.425194"
+                      width="169.15"
+                      height="169.15"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="29.45" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_442_7257" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_442_7257" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
           <h1 class="section-hero__background-text d-none d-xl-block">Remote Desktop</h1>
         </div>
         <div class="section-hero__experiance">
+          <img src="../wp-content/uploads/frame_6.png" alt="" class="frame-6" />
+          <img src="../wp-content/uploads/frame_7.png" alt="" class="frame-7" />
           <div class="section-hero__experience--experience-section extend_1">
             <h3 class="section-hero__experience-text">
               Experience
@@ -149,6 +205,26 @@
           </div>
         </div>
       </div>
+      <script>
+        const playButton = document.getElementById("playButton");
+        const videoElement = document.getElementById("videoElement");
+        playButton.addEventListener("click", () => {
+          console.log("playbutton click");
+          if (videoElement.paused) {
+            videoElement.play();
+            playButton.style.display = "none";
+          }
+        });
+        videoElement.addEventListener("play", () => {
+          playButton.style.display = "none";
+        });
+        videoElement.addEventListener("pause", () => {
+          playButton.style.display = "block";
+        });
+        videoElement.addEventListener("ended", () => {
+          playButton.style.display = "block";
+        });
+      </script>
     </section>
     <section class="section-keyfeature" id="features">
       <div class="container">
@@ -263,13 +339,13 @@
           </div>
           <div class="col-12 d-flex justify-content-center">
             <div class="section-pricing__toggle-btn-wrap">
-              <button id="btn-monthly" class="section-pricing__toggle-btn active">Monthly</button>
-              <button id="btn-yearly" class="section-pricing__toggle-btn">Yearly (Save 20%)</button>
+              <button id="btn-monthly" class="section-pricing__toggle-btn active">Individual License</button>
+              <button id="btn-yearly" class="section-pricing__toggle-btn">Volume License</button>
             </div>
           </div>
         </div>
         <div class="row section-pricing__pricing-row active align-items-center justify-content-center" id="monthly">
-          <div class="col-12 col-md-8 col-lg-4">
+          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
             <div class="section-pricing__pricing-card">
               <div class="section-pricing__pricing-card--top">
                 <div class="section-pricing__pricing-card--type">
@@ -279,15 +355,25 @@
                   Ideal for individuals or small teams looking <br class="d-none d-xl-block" />
                   for simple remote access.
                 </p>
-                <p class="section-pricing__pricing-card--method">Free</p>
+                <!-- <p class="section-pricing__pricing-card--method">Free</p> -->
                 <div class="section-pricing__pricing-card--middle__line"></div>
                 <div class="section-pricing__pricing-card--point__wrap">
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -295,10 +381,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -306,10 +402,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -317,12 +423,12 @@
                   </div>
                 </div>
               </div>
-              <div class="section-pricing__pricing-card--bottom">
+              <!-- <div class="section-pricing__pricing-card--bottom">
                 <a href="" class="section-pricing__pricing-card--downlod"> Get Started </a>
-              </div>
+              </div> -->
             </div>
           </div>
-          <div class="col-12 col-md-8 col-lg-4">
+          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
             <div class="section-pricing__pricing-card pro">
               <div class="section-pricing__pricing-card--top">
                 <div class="section-pricing__pricing-card--type pro">
@@ -332,15 +438,25 @@
                   Perfect for businesses needing advanced <br class="d-none d-xl-block" />
                   remote capabilities.
                 </p>
-                <p class="section-pricing__pricing-card--method pro">$20 <span>/month</span></p>
+                <!-- <p class="section-pricing__pricing-card--method pro">$20 <span>/month</span></p> -->
                 <div class="section-pricing__pricing-card--middle__line"></div>
                 <div class="section-pricing__pricing-card--point__wrap">
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -348,10 +464,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -359,10 +485,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -370,10 +506,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -383,129 +529,12 @@
               </div>
               <div class="section-pricing__pricing-card--bottom pro">
                 <a href="" class="section-pricing__pricing-card--downlod text-highlight pro"> Get Started </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-8 col-lg-4">
-            <div class="section-pricing__pricing-card">
-              <div class="section-pricing__pricing-card--top">
-                <div class="section-pricing__pricing-card--type">
-                  <p class="section-pricing__pricing-card--type-text">Enterprise</p>
-                </div>
-                <p class="section-pricing__pricing-card--des">
-                  For unique needs, let’s craft a custom <br class="d-none d-xl-block" />
-                  solution tailored to your business.
-                </p>
-                <p class="section-pricing__pricing-card--method">$50 <span>/month</span></p>
-                <div class="section-pricing__pricing-card--middle__line"></div>
-                <div class="section-pricing__pricing-card--point__wrap">
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">Everything in Professional.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">Customizable dashboard.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">API access for integrations.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">Priority support and onboarding.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="section-pricing__pricing-card--bottom">
-                <a href="" class="section-pricing__pricing-card--downlod"> Get Started </a>
               </div>
             </div>
           </div>
         </div>
         <div class="row section-pricing__pricing-row align-items-center justify-content-center" id="yearly">
-          <div class="col-12 col-md-8 col-lg-4">
-            <div class="section-pricing__pricing-card">
-              <div class="section-pricing__pricing-card--top">
-                <div class="section-pricing__pricing-card--type">
-                  <p class="section-pricing__pricing-card--type-text">Basic</p>
-                </div>
-                <p class="section-pricing__pricing-card--des">
-                  Ideal for individuals or small teams looking <br class="d-none d-xl-block" />
-                  for simple remote access.
-                </p>
-                <p class="section-pricing__pricing-card--method">Free</p>
-                <div class="section-pricing__pricing-card--middle__line"></div>
-                <div class="section-pricing__pricing-card--point__wrap">
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">Secure remote desktop connections.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">File transfer support.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">24/7 customer support.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="section-pricing__pricing-card--bottom">
-                <a href="" class="section-pricing__pricing-card--downlod"> Get Started </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-8 col-lg-4">
+          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
             <div class="section-pricing__pricing-card pro">
               <div class="section-pricing__pricing-card--top">
                 <div class="section-pricing__pricing-card--type pro">
@@ -515,15 +544,25 @@
                   Perfect for businesses needing advanced <br class="d-none d-xl-block" />
                   remote capabilities.
                 </p>
-                <p class="section-pricing__pricing-card--method pro">$20 <span>/month</span></p>
+                <!-- <p class="section-pricing__pricing-card--method pro">$20 <span>/month</span></p> -->
                 <div class="section-pricing__pricing-card--middle__line"></div>
                 <div class="section-pricing__pricing-card--point__wrap">
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -531,10 +570,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -542,10 +591,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -553,10 +612,20 @@
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#93B5FF"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
@@ -569,62 +638,81 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-8 col-lg-4">
+          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
             <div class="section-pricing__pricing-card">
               <div class="section-pricing__pricing-card--top">
                 <div class="section-pricing__pricing-card--type">
-                  <p class="section-pricing__pricing-card--type-text">Enterprise</p>
+                  <p class="section-pricing__pricing-card--type-text">Basic</p>
                 </div>
                 <p class="section-pricing__pricing-card--des">
-                  For unique needs, let’s craft a custom <br class="d-none d-xl-block" />
-                  solution tailored to your business.
+                  Ideal for individuals or small teams looking <br class="d-none d-xl-block" />
+                  for simple remote access.
                 </p>
-                <p class="section-pricing__pricing-card--method">$50 <span>/month</span></p>
+                <!-- <p class="section-pricing__pricing-card--method">Free</p> -->
                 <div class="section-pricing__pricing-card--middle__line"></div>
                 <div class="section-pricing__pricing-card--point__wrap">
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
-                    <p class="section-pricing__pricing-card--point__text">Everything in Professional.</p>
+                    <p class="section-pricing__pricing-card--point__text">Secure remote desktop connections.</p>
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
-                    <p class="section-pricing__pricing-card--point__text">Customizable dashboard.</p>
+                    <p class="section-pricing__pricing-card--point__text">File transfer support.</p>
                   </div>
                   <div class="section-pricing__pricing-card--point">
                     <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
                         <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
+                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </div>
-                    <p class="section-pricing__pricing-card--point__text">API access for integrations.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
-                        <path
-                          d="M17.5741 0L6.87395 10.9873L3.40361 7.42386L0 10.9188L3.47034 14.4822L6.89617 18L10.2998 14.5051L21 3.51779L17.5741 0Z"
-                          fill="#989898"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">Priority support and onboarding.</p>
+                    <p class="section-pricing__pricing-card--point__text">24/7 customer support.</p>
                   </div>
                 </div>
               </div>
@@ -886,7 +974,7 @@
         <div class="container">
           <div class="row section-footer__top-section align">
             <div class="col-2 col-lg-4">
-              <img src="" alt="logo" />
+              <img src="../wp-content/uploads/RDP_Logo.png" alt="RDP Logo" class="logo-footer-desktop" />
             </div>
             <div class="col-6 col-lg-4">
               <div class="section-footer__navbar d-flex">
@@ -916,9 +1004,10 @@
           <div class="row section-footer__middle-section">
             <div class="col-6">
               <p class="section-footer__navbar-text">
-                Lorem ipsum dolor sit amet consectetur. Eget interdum turpis arcu fermentum aliquet mattis ridiculus
-                tincidunt egestas. Donec felis rhoncus sed nisl nam tempus urna id turpis. Nunc sit sed sodales morbi in
-                et volutpat facilisi aliquet. Volutpat sed vitae tincidunt egestas viverra curabitur.
+                Experience the future of remote desktop solutions with our cutting-edge RDP Web Client. Engineered for
+                security, performance, and ease of use, it empowers businesses and individuals to stay connected
+                effortlessly. Join thousands of users leveraging our platform for a streamlined, productive remote work
+                experience.
               </p>
             </div>
             <div class="col-6 section-footer__inputs">
@@ -1015,9 +1104,9 @@
         <div class="container">
           <div class="row">
             <div class="col-6">
-              <img src="" alt="logo" class="footer-mobile-logo" />
+              <img src="../wp-content/uploads/RDP_Logo.png" alt="RDP Logo" class="footer-mobile-logo" />
             </div>
-            <div class="col-6">
+            <div class="col-6 d-flex section-footer__mobile-sm-icon-container">
               <div class="section-footer__mobile-sm-icon">
                 <div class="fb-m">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -1090,9 +1179,10 @@
             </div>
             <div class="col-12">
               <p class="section-footer__mobile-des">
-                Lorem ipsum dolor sit amet consectetur. Eget interdum turpis arcu fermentum aliquet mattis ridiculus
-                tincidunt egestas. Donec felis rhoncus sed nisl nam tempus urna id turpis. Nunc sit sed sodales morbi in
-                et volutpat facilisi aliquet. Volutpat sed vitae tincidunt egestas viverra curabitur.
+                Experience the future of remote desktop solutions with our cutting-edge RDP Web Client. Engineered for
+                security, performance, and ease of use, it empowers businesses and individuals to stay connected
+                effortlessly. Join thousands of users leveraging our platform for a streamlined, productive remote work
+                experience.
               </p>
             </div>
             <div class="col-12">

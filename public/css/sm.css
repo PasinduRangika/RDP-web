@@ -31,7 +31,7 @@
     align-items: center;
     gap: 10px;
     color: #f3f3f3;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     border-radius: 40px;
   }
@@ -39,7 +39,7 @@
     border: none;
     background-color: #fff;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     width: 160px;
   }
@@ -71,5 +71,76 @@
   .section-blog__blog-readmore {
     display: block;
     text-align: center;
+  }
+  /* model */
+  .modal .forminput {
+    width: 325px !important;
+  }
+  .modal .forminputtext {
+    width: 325px !important;
+  }
+  .modal .formdrown {
+    width: 325px !important;
+  }
+  .modal .file-upload-wrap {
+    width: 325px !important;
+  }
+  .modal .file-upload-wrap-inner {
+    width: 280px;
+  }
+  .modal-content {
+    margin: 20% auto;
+    padding: 10px;
+    width: 98%;
+    border-radius: 15px;
+    max-height: 82vh;
+  }
+
+  .contact-set {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .video-wrappner-inner {
+    position: relative;
+    width: 366px;
+    height: 213px;
+  }
+  .section-single-blog__title {
+    font-size: 36px;
+  }
+  .section-single-blog__content--blog-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .section-single-blog__content p {
+    font-size: 16px;
+  }
+  .section-single-blog__content h4 {
+    font-size: 18px;
+  }
+  .section-single-blog__owner--name {
+    font-size: 16px;
+  }
+  .section-single-blog__owner--job-title {
+    font-size: 16px;
+  }
+  .section-single-blog__control-btn {
+    display: flex;
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    gap: 10px;
+  }
+  .section-single-blog__read-time {
+    font-size: 16px;
   }
 }

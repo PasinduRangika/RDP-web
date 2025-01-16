@@ -43,4 +43,32 @@
     font-size: 14px;
     padding: 6px 12px;
   }
+  /* model */
+  .modal .forminput {
+    width: 475px !important;
+  }
+  .modal .forminputtext {
+    width: 475px !important;
+  }
+  .modal .formdrown {
+    width: 475px !important;
+  }
+  .modal .file-upload-wrap {
+    width: 475px !important;
+  }
+  .modal-content {
+    width: 80%;
+    border-radius: 30px;
+    max-height: 62vh;
+  }
+  .section-pricing__pricing-card {
+    height: 460px;
+    padding: 20px 20px;
+  }
+  .section-pricing__pricing-card.pro {
+    height: 490px;
+  }
+  .section-single-blog__title {
+    font-size: 44px;
+  }
 }

@@ -7,16 +7,44 @@
     background: #016fef;
   }
   .section-pricing__pricing-card {
-    height: 600px;
+    height: 490px;
     padding: 20px 20px;
   }
   .section-pricing__pricing-card.pro {
-    height: 630px;
+    height: 520px;
   }
   .section-blog__blog-card {
     margin-bottom: 40px;
   }
   .section-blog-insights-list__latest-blog-card {
     padding-top: 100px;
+  }
+  /* model */
+  .modal .forminput {
+    width: 425px !important;
+  }
+  .modal .forminputtext {
+    width: 425px !important;
+  }
+  .modal .formdrown {
+    width: 425px !important;
+  }
+  .modal .file-upload-wrap {
+    width: 425px !important;
+  }
+
+  .modal .file-upload-wrap-inner {
+    width: 350px;
+  }
+  .modal-content {
+    width: 60%;
+    border-radius: 30px;
+    max-height: 62vh;
+  }
+  .frame-6 {
+    display: none;
+  }
+  .frame-7 {
+    display: none;
   }
 }
