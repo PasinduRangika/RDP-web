@@ -339,414 +339,672 @@
           </div>
           <div class="col-12 d-flex justify-content-center">
             <div class="section-pricing__toggle-btn-wrap">
-              <button id="btn-monthly" class="section-pricing__toggle-btn active">Individual License</button>
-              <button id="btn-yearly" class="section-pricing__toggle-btn">Volume License</button>
+              <button id="btn-basic" class="section-pricing__toggle-btn active">Basic Package</button>
+              <button id="btn-professional" class="section-pricing__toggle-btn">Professional Package</button>
+              <button id="btn-enterprise" class="section-pricing__toggle-btn">Enterprise Package</button>
             </div>
           </div>
         </div>
-        <div class="row section-pricing__pricing-row active align-items-center justify-content-center" id="monthly">
-          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
-            <div class="section-pricing__pricing-card">
-              <div class="section-pricing__pricing-card--top">
-                <div class="section-pricing__pricing-card--type">
-                  <p class="section-pricing__pricing-card--type-text">Basic</p>
-                </div>
-                <p class="section-pricing__pricing-card--des">
-                  Ideal for individuals or small teams looking <br class="d-none d-xl-block" />
-                  for simple remote access.
-                </p>
-                <!-- <p class="section-pricing__pricing-card--method">Free</p> -->
-                <div class="section-pricing__pricing-card--middle__line"></div>
-                <div class="section-pricing__pricing-card--point__wrap">
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">Secure remote desktop connections.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">File transfer support.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">24/7 customer support.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="section-pricing__pricing-card--bottom">
-                <a href="" class="section-pricing__pricing-card--downlod"> Get Started </a>
-              </div> -->
+
+        <!-- Pricing Rows -->
+        <div class="row section-pricing__pricing-row active align-items-center justify-content-center" id="basic-row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="section-pricing__sub-toggle-btn-wrap">
+              <button class="sub-toggle-btn active">Individual License</button>
             </div>
           </div>
-          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
-            <div class="section-pricing__pricing-card pro">
-              <div class="section-pricing__pricing-card--top">
-                <div class="section-pricing__pricing-card--type pro">
-                  <p class="section-pricing__pricing-card--type-text pro">Professional</p>
+          <div class="col-12">
+            <p class="section-pricing__section-title">Enjoy the Best Features of Our Remote Desktop Starting Free</p>
+          </div>
+          <div class="row align-items-center justify-content-center section-pricing__feature-card-border">
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                    <path
+                      d="M11 0L0 4.18182V10.4545C0 16.2568 4.69333 21.6827 11 23C17.3067 21.6827 22 16.2568 22 10.4545V4.18182L11 0ZM11 11.4895H19.5556C18.9078 15.7968 15.5467 19.6336 11 20.8359V11.5H2.44444V5.54091L11 2.28955V11.4895Z"
+                      fill="#016FEF"
+                    />
+                  </svg>
                 </div>
-                <p class="section-pricing__pricing-card--des pro">
-                  Perfect for businesses needing advanced <br class="d-none d-xl-block" />
-                  remote capabilities.
+                <p class="section-pricing__feature-card-title">Secure remote desktop</p>
+                <p class="section-pricing__feature-card-des">
+                  We provide reliable and uninterrupted remote connections to keep you productive at all times.
                 </p>
-                <!-- <p class="section-pricing__pricing-card--method pro">$20 <span>/month</span></p> -->
-                <div class="section-pricing__pricing-card--middle__line"></div>
-                <div class="section-pricing__pricing-card--point__wrap">
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Everything in Basic.</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                    <path
+                      d="M13 26.5C12.6317 26.5 12.3231 26.3613 12.0744 26.084C11.8257 25.8067 11.7009 25.4639 11.7 25.0556C11.6991 24.6473 11.8239 24.3044 12.0744 24.0271C12.3249 23.7498 12.6334 23.6111 13 23.6111H22.1V13.3556C22.1 10.5389 21.2173 8.14978 19.4519 6.18822C17.6865 4.22667 15.5359 3.24541 13 3.24444C10.4641 3.24348 8.31393 4.22474 6.5494 6.18822C4.78487 8.1517 3.90173 10.5408 3.9 13.3556V20.7222C3.9 21.1315 3.7752 21.4748 3.5256 21.7521C3.276 22.0294 2.96747 22.1676 2.6 22.1667C1.885 22.1667 1.27313 21.884 0.7644 21.3188C0.255667 20.7535 0.000866666 20.0732 0 19.2778V16.3889C0 15.8833 0.113967 15.4081 0.3419 14.9632C0.569833 14.5183 0.8892 14.163 1.3 13.8972L1.3975 11.9833C1.57083 10.3463 1.99897 8.82963 2.6819 7.43333C3.36483 6.03704 4.22067 4.8213 5.2494 3.78611C6.27813 2.75093 7.45853 1.94444 8.7906 1.36667C10.1227 0.788889 11.5258 0.5 13 0.5C14.4742 0.5 15.8717 0.788889 17.1925 1.36667C18.5133 1.94444 19.6941 2.74515 20.735 3.76878C21.7759 4.79241 22.6317 6.00189 23.3025 7.39722C23.9733 8.79255 24.4066 10.3092 24.6025 11.9472L24.7 13.825C25.1117 14.0417 25.4315 14.3667 25.6594 14.8C25.8873 15.2333 26.0009 15.6907 26 16.1722V19.4944C26 19.9759 25.8865 20.4333 25.6594 20.8667C25.4323 21.3 25.1125 21.625 24.7 21.8417V23.6111C24.7 24.4056 24.4456 25.0859 23.9369 25.6521C23.4282 26.2183 22.8159 26.501 22.1 26.5H13ZM9.1 16.3889C8.73166 16.3889 8.42313 16.2502 8.1744 15.9729C7.92566 15.6956 7.80087 15.3527 7.8 14.9444C7.79913 14.5361 7.92393 14.1933 8.1744 13.916C8.42486 13.6387 8.7334 13.5 9.1 13.5C9.4666 13.5 9.77557 13.6387 10.0269 13.916C10.2782 14.1933 10.4026 14.5361 10.4 14.9444C10.3974 15.3527 10.2726 15.696 10.0256 15.9743C9.7786 16.2526 9.47006 16.3908 9.1 16.3889ZM16.9 16.3889C16.5317 16.3889 16.2231 16.2502 15.9744 15.9729C15.7257 15.6956 15.6009 15.3527 15.6 14.9444C15.5991 14.5361 15.7239 14.1933 15.9744 13.916C16.2249 13.6387 16.5334 13.5 16.9 13.5C17.2666 13.5 17.5756 13.6387 17.8269 13.916C18.0782 14.1933 18.2026 14.5361 18.2 14.9444C18.1974 15.3527 18.0726 15.696 17.8256 15.9743C17.5786 16.2526 17.2701 16.3908 16.9 16.3889ZM5.2325 14.15C5.08083 11.5981 5.77417 9.40741 7.3125 7.57778C8.85083 5.74815 10.7683 4.83333 13.065 4.83333C14.9933 4.83333 16.689 5.51319 18.1519 6.87289C19.6148 8.23259 20.4975 9.97267 20.8 12.0931C18.8283 12.0681 17.014 11.4778 15.3569 10.3222C13.6998 9.16667 12.4267 7.60185 11.5375 5.62778C11.1908 7.5537 10.4598 9.26922 9.3444 10.7743C8.229 12.2794 6.85837 13.4047 5.2325 14.15Z"
+                      fill="#016FEF"
+                    />
+                  </svg>
+                </div>
+                <p class="section-pricing__feature-card-title">24/7 customer support</p>
+                <p class="section-pricing__feature-card-des">
+                  Our state-of-the-art security protocols ensure your data and transactions are safe from threats.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 justify-content-center">
+            <div class="section-pricing__zip-download-wrap">
+              <p class="section-pricing__zip-download">Click here to download</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.5 16.25C5.69891 16.25 5.88968 16.329 6.03033 16.4697C6.17098 16.6103 6.25 16.8011 6.25 17V19C6.25 19.138 6.362 19.25 6.5 19.25H18.5C18.5663 19.25 18.6299 19.2237 18.6768 19.1768C18.7237 19.1299 18.75 19.0663 18.75 19V17C18.75 16.8011 18.829 16.6103 18.9697 16.4697C19.1103 16.329 19.3011 16.25 19.5 16.25C19.6989 16.25 19.8897 16.329 20.0303 16.4697C20.171 16.6103 20.25 16.8011 20.25 17V19C20.25 19.4641 20.0656 19.9092 19.7374 20.2374C19.4092 20.5656 18.9641 20.75 18.5 20.75H6.5C6.03587 20.75 5.59075 20.5656 5.26256 20.2374C4.93437 19.9092 4.75 19.4641 4.75 19V17C4.75 16.8011 4.82902 16.6103 4.96967 16.4697C5.11032 16.329 5.30109 16.25 5.5 16.25Z"
+                  fill="white"
+                />
+                <path
+                  d="M11.2381 3.75C10.9898 3.74961 10.7504 3.84253 10.5674 4.01034C10.3844 4.17815 10.2712 4.4086 10.2501 4.656C10.0975 6.40849 10.0701 8.16962 10.1681 9.926C9.92144 9.93934 9.67477 9.955 9.4281 9.973L7.9381 10.082C7.80688 10.0916 7.6804 10.1351 7.57104 10.2083C7.46168 10.2815 7.37319 10.3818 7.31423 10.4994C7.25526 10.617 7.22785 10.7479 7.23466 10.8793C7.24148 11.0107 7.28229 11.1381 7.3531 11.249C8.41585 12.9105 9.78402 14.3553 11.3851 15.507L11.9821 15.936C12.1332 16.0441 12.3143 16.1023 12.5001 16.1023C12.6859 16.1023 12.867 16.0441 13.0181 15.936L13.6151 15.507C15.2162 14.3553 16.5843 12.9105 17.6471 11.249C17.7179 11.1381 17.7587 11.0107 17.7655 10.8793C17.7724 10.7479 17.7449 10.617 17.686 10.4994C17.627 10.3818 17.5385 10.2815 17.4292 10.2083C17.3198 10.1351 17.1933 10.0916 17.0621 10.082L15.5721 9.973C15.3256 9.95516 15.0789 9.93949 14.8321 9.926C14.9304 8.16964 14.9033 6.40851 14.7511 4.656C14.73 4.40843 14.6166 4.17784 14.4334 4.01C14.2502 3.84217 14.0106 3.74936 13.7621 3.75H11.2381Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row section-pricing__pricing-row align-items-center justify-content-center" id="professional-row">
+          <div class="col-12 d-flex justify-content-center">
+            <!-- Sub-toggle buttons for Professional Package -->
+            <div class="section-pricing__sub-toggle-btn-wrap">
+              <button id="btn-individual" class="sub-toggle-btn active">Individual License</button>
+              <button id="btn-volume" class="sub-toggle-btn">Volume License</button>
+            </div>
+          </div>
+          <div class="row section-pricing__license-row active" id="individual-license-row">
+            <div class="col-12">
+              <p class="section-pricing__section-title">Elevate Your Experience with the $19.99 Professional Package</p>
+            </div>
+            <div class="row align-items-center justify-content-center section-pricing__feature-card-border">
+              <div class="col-4">
+                <div class="section-pricing__feature-card">
+                  <div class="section-pricing__icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.9197 9.00304C22.1014 8.82163 22.3476 8.71973 22.6043 8.71973C22.861 8.71973 23.1072 8.82163 23.2889 9.00304L23.2915 9.00562L23.2953 9.00821L23.3044 9.01725L23.3302 9.04308L23.4103 9.13221C23.4749 9.20583 23.5653 9.31046 23.6699 9.4435C24.8634 10.9948 25.5105 12.8971 25.5105 14.8543C25.5105 16.8115 24.8634 18.7138 23.6699 20.2651C23.5617 20.4031 23.448 20.5367 23.3289 20.6655L23.3031 20.6913L23.2953 20.7004L23.2915 20.703L23.2902 20.7042L22.6314 20.0481L23.2902 20.7068C23.1084 20.8886 22.862 20.9907 22.6049 20.9907C22.3479 20.9907 22.1014 20.8886 21.9197 20.7068C21.738 20.5251 21.6359 20.2786 21.6359 20.0216C21.6359 19.7646 21.738 19.5181 21.9197 19.3364L21.9184 19.3377L21.9158 19.339L21.9223 19.3325L21.9649 19.286C22.0063 19.2412 22.0661 19.1693 22.1445 19.0703C22.9616 18.0035 23.4513 16.7224 23.554 15.3826C23.6568 14.0428 23.3681 12.7019 22.7231 11.5231C22.5547 11.2128 22.3612 10.9169 22.1445 10.6383C22.0743 10.5476 22.0002 10.4602 21.9223 10.3761L21.9158 10.3696C21.7357 10.1876 21.635 9.94162 21.6357 9.68553C21.6365 9.42944 21.7386 9.18406 21.9197 9.00304Z"
+                        fill="#016FEF"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M25.7947 5.12801C25.9763 4.94659 26.2225 4.84469 26.4792 4.84469C26.736 4.84469 26.9822 4.94659 27.1638 5.12801L27.1677 5.13059L27.1716 5.13447L27.1832 5.14738C27.2392 5.20261 27.2926 5.26036 27.3434 5.32047C27.4454 5.43542 27.5862 5.60205 27.7515 5.81776C28.0835 6.24788 28.5188 6.8808 28.9515 7.70359C29.8169 9.34917 30.6772 11.7633 30.6772 14.8543C30.6772 17.9452 29.8169 20.3593 28.9515 22.0062C28.6068 22.6683 28.2053 23.2993 27.7515 23.892C27.573 24.1241 27.3834 24.3474 27.1832 24.5611L27.1703 24.574L27.1677 24.5779L27.1651 24.5792L26.4792 23.8959L27.1638 24.5805C26.9812 24.7571 26.7365 24.8548 26.4825 24.8527C26.2285 24.8506 25.9855 24.7489 25.8058 24.5693C25.6261 24.3898 25.5241 24.1469 25.5218 23.8929C25.5195 23.6389 25.617 23.3941 25.7934 23.2113L25.8115 23.1933L25.8928 23.1028C25.9695 23.0185 26.0771 22.8876 26.2157 22.7102C26.4896 22.3537 26.8616 21.815 27.2362 21.1033C27.9853 19.6825 28.7397 17.5758 28.7397 14.8543C28.7397 12.1327 27.9853 10.026 27.2362 8.60517C26.9421 8.04167 26.6007 7.50413 26.2157 6.99834C26.0876 6.8319 25.9527 6.67074 25.8115 6.51526L25.7934 6.49717C25.612 6.31553 25.5101 6.06931 25.5101 5.81259C25.5101 5.55587 25.6132 5.30965 25.7947 5.12801ZM15.5479 4.38659C17.0501 3.39588 19.0522 4.47442 19.0522 6.27372V24.7265C19.0522 26.527 17.0501 27.6043 15.5479 26.6136L7.79787 21.505C7.74544 21.4701 7.68393 21.4512 7.62091 21.4508H3.87508C2.93301 21.4508 2.02952 21.0766 1.36338 20.4104C0.697234 19.7443 0.322998 18.8408 0.322998 17.8987V13.1015C0.322998 12.635 0.414875 12.1731 0.593384 11.7421C0.771893 11.3112 1.03354 10.9196 1.36338 10.5898C1.69322 10.2599 2.0848 9.99828 2.51576 9.81977C2.94672 9.64126 3.40862 9.54938 3.87508 9.54938H7.62091C7.68424 9.54959 7.74623 9.53117 7.79916 9.49642L15.5479 4.38659Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
                   </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Device and audio redirection.</p>
+                  <p class="section-pricing__feature-card-title">Sound redirection</p>
+                  <p class="section-pricing__feature-card-des">
+                    Redirects audio from the remote desktop to the local device, allowing users to hear notifications,
+                    media, or system sounds in real-time.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__feature-card">
+                  <div class="section-pricing__icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                      <path
+                        opacity="0.5"
+                        d="M14.5834 2.91675H20.4167C25.9161 2.91675 28.6665 2.91675 30.3742 4.62591C32.082 6.33508 32.0834 9.08404 32.0834 14.5834V16.0417C32.0834 16.8467 32.0834 18.3022 32.0747 18.9584H2.92696C2.91675 18.3022 2.91675 16.8467 2.91675 16.0417V14.5834C2.91675 9.08404 2.91675 6.33362 4.62591 4.62591C6.33508 2.91821 9.08404 2.91675 14.5834 2.91675Z"
+                        fill="#016FEF"
+                      />
+                      <path
+                        d="M11.6449 25.5208C7.50321 25.5208 5.43237 25.5208 4.14758 24.2389C3.31341 23.4091 3.01883 22.2512 2.91675 20.4166V18.9583H32.0834V20.4166C31.9813 22.2512 31.6867 23.4091 30.8526 24.2389C29.5663 25.5208 27.497 25.5208 23.3567 25.5208H18.5982V31.3541H23.3553C23.962 31.3541 24.4534 31.8441 24.4534 32.4478C24.4534 33.0516 23.962 33.5416 23.3553 33.5416H11.6449C11.5009 33.5422 11.3582 33.5143 11.225 33.4596C11.0918 33.4049 10.9707 33.3244 10.8686 33.2228C10.7666 33.1212 10.6857 33.0004 10.6304 32.8674C10.5752 32.7344 10.5467 32.5918 10.5467 32.4478C10.5467 31.8441 11.0382 31.3541 11.6449 31.3541H16.402V25.5208H11.6449Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
                   </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Multi-monitor support.</p>
+                  <p class="section-pricing__feature-card-title">Multi monitor support</p>
+                  <p class="section-pricing__feature-card-des">
+                    Enables users to extend the remote desktop across multiple monitors, allowing a multi-display setup
+                    for improved productivity.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__feature-card">
+                  <div class="section-pricing__icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                      <path
+                        d="M15.5 2.0625C15.6543 2.06251 15.8063 2.10062 15.9423 2.17346C16.0784 2.24629 16.1944 2.35158 16.28 2.48L18.78 6.23C18.8499 6.3324 18.8988 6.44764 18.9239 6.56906C18.9489 6.69049 18.9497 6.81567 18.926 6.93738C18.9024 7.05908 18.8548 7.17489 18.7861 7.2781C18.7174 7.3813 18.6289 7.46985 18.5258 7.53862C18.4226 7.6074 18.3068 7.65502 18.1851 7.67875C18.0634 7.70248 17.9382 7.70183 17.8168 7.67685C17.6954 7.65186 17.5801 7.60304 17.4777 7.53321C17.3752 7.46337 17.2876 7.37391 17.22 7.27L16.4375 6.09625V19.24C16.5892 19.1625 16.7475 19.0958 16.9125 19.04L20.9938 17.68C21.6313 17.4675 22.0625 16.8713 22.0625 16.1987V13.8862C21.7633 13.8342 21.487 13.6925 21.27 13.48C21.029 13.2301 20.8789 12.9066 20.8438 12.5613C20.8176 12.3059 20.8071 12.0491 20.8125 11.7925V11.7075C20.8125 11.45 20.8125 11.1737 20.8438 10.9387C20.8813 10.665 20.975 10.3138 21.27 10.02C21.565 9.725 21.915 9.63125 22.1888 9.59375C22.4238 9.5625 22.7013 9.5625 22.9575 9.5625H23.0438C23.3 9.5625 23.5763 9.5625 23.8113 9.59375C24.085 9.63125 24.4363 9.725 24.73 10.02C25.025 10.315 25.1188 10.665 25.1563 10.9387C25.1875 11.1737 25.1875 11.4512 25.1875 11.7075V11.7925C25.1875 12.05 25.1875 12.3263 25.1563 12.5613C25.1188 12.835 25.025 13.1862 24.73 13.48C24.48 13.73 24.1875 13.8363 23.9375 13.885V16.1975C23.9378 16.9192 23.711 17.6226 23.2892 18.2082C22.8675 18.7937 22.2721 19.2317 21.5875 19.46L17.5063 20.82C17.195 20.9237 16.9243 21.1226 16.7325 21.3887C16.5407 21.6548 16.4375 21.9745 16.4375 22.3025V23.1813C16.9753 23.3988 17.4208 23.7967 17.6974 24.3066C17.9741 24.8166 18.0648 25.4069 17.954 25.9764C17.8431 26.5458 17.5377 27.0591 17.09 27.428C16.6423 27.797 16.0802 27.9988 15.5 27.9988C14.9198 27.9988 14.3577 27.797 13.91 27.428C13.4623 27.0591 13.1569 26.5458 13.046 25.9764C12.9352 25.4069 13.0259 24.8166 13.3026 24.3066C13.5793 23.7967 14.0247 23.3988 14.5625 23.1813V18.5525C14.5625 18.2245 14.4593 17.9048 14.2675 17.6387C14.0757 17.3726 13.805 17.1737 13.4938 17.07L9.4125 15.7087C8.72812 15.4805 8.13289 15.0427 7.71112 14.4574C7.28936 13.8721 7.06244 13.1689 7.0625 12.4475V9.9775C6.61376 9.76464 6.25081 9.40542 6.03334 8.95889C5.81587 8.51237 5.75683 8.00513 5.86592 7.52059C5.97502 7.03606 6.24575 6.60307 6.6336 6.29283C7.02146 5.98259 7.50334 5.81358 8 5.81358C8.49667 5.81358 8.97855 5.98259 9.3664 6.29283C9.75426 6.60307 10.025 7.03606 10.1341 7.52059C10.2432 8.00513 10.1841 8.51237 9.96666 8.95889C9.74919 9.40542 9.38624 9.76464 8.9375 9.9775V12.4475C8.9375 13.1212 9.3675 13.7175 10.0063 13.93L14.0875 15.2913C14.2525 15.3463 14.4108 15.4125 14.5625 15.49V6.09625L13.78 7.27C13.7124 7.37391 13.6248 7.46337 13.5224 7.53321C13.4199 7.60304 13.3046 7.65186 13.1832 7.67685C13.0618 7.70183 12.9366 7.70248 12.8149 7.67875C12.6932 7.65502 12.5774 7.6074 12.4743 7.53862C12.3711 7.46985 12.2826 7.3813 12.2139 7.2781C12.1452 7.17489 12.0976 7.05908 12.074 6.93738C12.0503 6.81567 12.0511 6.69049 12.0761 6.56906C12.1012 6.44764 12.1501 6.3324 12.22 6.23L14.72 2.48C14.8056 2.35158 14.9216 2.24629 15.0577 2.17346C15.1937 2.10062 15.3457 2.06251 15.5 2.0625Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
                   </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                  <p class="section-pricing__feature-card-title">USB redirection</p>
+                  <p class="section-pricing__feature-card-des">
+                    Redirects USB devices connected to the local machine (e.g., printers, scanners) for use on the
+                    remote desktop
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="section-pricing__price-section-title-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="42" viewBox="0 0 40 42" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.1033 0.978516H19.8953C18.0973 0.978516 16.5993 0.978516 15.4113 1.13659C14.1553 1.30256 13.0213 1.67008 12.1113 2.56912C11.1993 3.47013 10.8273 4.59047 10.6593 5.82936C10.5453 6.67307 10.5113 8.68652 10.5033 10.4135C6.45927 10.5458 4.02927 11.0122 2.34327 12.6798C-0.00073266 14.9936 -0.000732422 18.7202 -0.000732422 26.1713C-0.000732422 33.6224 -0.00073266 37.349 2.34327 39.6628C4.68727 41.9765 8.45727 41.9785 15.9993 41.9785H23.9993C31.5413 41.9785 35.3133 41.9785 37.6553 39.6628C39.9973 37.347 39.9993 33.6224 39.9993 26.1713C39.9993 18.7202 39.9993 14.9936 37.6553 12.6798C35.9693 11.0122 33.5393 10.5458 29.4953 10.4154C29.4873 8.68652 29.4553 6.67307 29.3393 5.83134C29.1713 4.59047 28.7993 3.47013 27.8873 2.57109C26.9773 1.67008 25.8433 1.30256 24.5873 1.13659C23.3993 0.978516 21.8993 0.978516 20.1033 0.978516ZM26.4953 10.368C26.4853 8.69442 26.4573 6.89437 26.3673 6.22454C26.2413 5.31365 26.0273 4.92242 25.7673 4.66555C25.5073 4.40868 25.1113 4.19726 24.1873 4.07278C23.2233 3.94632 21.9273 3.94237 19.9993 3.94237C18.0713 3.94237 16.7753 3.94632 15.8093 4.07476C14.8873 4.19726 14.4913 4.40868 14.2313 4.66753C13.9713 4.92637 13.7573 5.31365 13.6313 6.22454C13.5413 6.89635 13.5113 8.69442 13.5033 10.368C14.2873 10.3641 15.1193 10.3627 15.9993 10.3641H23.9993C24.8819 10.3641 25.7139 10.3654 26.4953 10.368ZM19.9993 16.7857C20.3971 16.7857 20.7786 16.9419 21.0599 17.2198C21.3412 17.4977 21.4993 17.8746 21.4993 18.2677V18.2874C23.6773 18.8288 25.4993 20.5261 25.4993 22.8775C25.4993 23.2705 25.3412 23.6474 25.0599 23.9253C24.7786 24.2033 24.3971 24.3594 23.9993 24.3594C23.6014 24.3594 23.2199 24.2033 22.9386 23.9253C22.6573 23.6474 22.4993 23.2705 22.4993 22.8775C22.4993 22.1187 21.6473 21.0675 19.9993 21.0675C18.3513 21.0675 17.4993 22.1187 17.4993 22.8775C17.4993 23.6362 18.3513 24.6894 19.9993 24.6894C22.7693 24.6894 25.4993 26.5862 25.4993 29.4651C25.4993 31.8164 23.6773 33.5118 21.4993 34.0551V34.0749C21.4993 34.4679 21.3412 34.8449 21.0599 35.1228C20.7786 35.4007 20.3971 35.5568 19.9993 35.5568C19.6014 35.5568 19.2199 35.4007 18.9386 35.1228C18.6573 34.8449 18.4993 34.4679 18.4993 34.0749V34.0551C16.3213 33.5137 14.4993 31.8164 14.4993 29.4651C14.4993 29.0721 14.6573 28.6952 14.9386 28.4172C15.2199 28.1393 15.6014 27.9832 15.9993 27.9832C16.3971 27.9832 16.7786 28.1393 17.0599 28.4172C17.3412 28.6952 17.4993 29.0721 17.4993 29.4651C17.4993 30.2239 18.3513 31.275 19.9993 31.275C21.6473 31.275 22.4993 30.2239 22.4993 29.4651C22.4993 28.7064 21.6473 27.6532 19.9993 27.6532C17.2293 27.6532 14.4993 25.7563 14.4993 22.8775C14.4993 20.5261 16.3213 18.8288 18.4993 18.2874V18.2677C18.4993 17.8746 18.6573 17.4977 18.9386 17.2198C19.2199 16.9419 19.6014 16.7857 19.9993 16.7857Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="section-pricing__price-section-title">License prices <span>/Individual</span></p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__pricing-card">
+                  <div class="section-pricing__pricing-card--first-row">
+                    <div class="section-pricing__pricing-card--number-round">
+                      <p class="section-pricing__pricing-card--number-round--number">1</p>
+                      <p class="section-pricing__pricing-card--number-round--text">employee</p>
+                    </div>
+                    <div class="section-pricing__pricing-card-title">
+                      <p class="section-pricing__pricing-card-title--1">Volume License</p>
+                      <p class="section-pricing__pricing-card-title--2">Per users/per year</p>
+                    </div>
+                  </div>
+                  <p class="section-pricing__pricing-card-des">Great for small business</p>
+                  <p class="section-pricing__pricing-card-price">$10.99</p>
+                  <div class="section-pricing__pricing-card-getdimo">
+                    <a class="section-pricing__pricing-card-getdimo-text">Get a demo</a>
+                    <a class="section-pricing__pricing-card-getdimo-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
                         <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.26144 6.61102L1.65212 11.5L0.5 10.278L4.53325 6L0.5 1.72203L1.65212 0.5L6.26144 5.38898C6.41419 5.55105 6.5 5.77084 6.5 6C6.5 6.22916 6.41419 6.44895 6.26144 6.61102Z"
+                          fill="#016FEF"
                         />
                       </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Advanced encryption for secure access.</p>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="section-pricing__pricing-card--bottom pro">
-                <a href="" class="section-pricing__pricing-card--downlod text-highlight pro"> Get Started </a>
+            </div>
+          </div>
+          <div class="row section-pricing__license-row" id="volume-license-row">
+            <div class="col-12">
+              <p class="section-pricing__section-title">Elevate Your Experience with the $19.99 Professional Package</p>
+            </div>
+            <div class="row align-items-center justify-content-center section-pricing__feature-card-border">
+              <div class="col-4">
+                <div class="section-pricing__feature-card">
+                  <div class="section-pricing__icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.9197 9.00304C22.1014 8.82163 22.3476 8.71973 22.6043 8.71973C22.861 8.71973 23.1072 8.82163 23.2889 9.00304L23.2915 9.00562L23.2953 9.00821L23.3044 9.01725L23.3302 9.04308L23.4103 9.13221C23.4749 9.20583 23.5653 9.31046 23.6699 9.4435C24.8634 10.9948 25.5105 12.8971 25.5105 14.8543C25.5105 16.8115 24.8634 18.7138 23.6699 20.2651C23.5617 20.4031 23.448 20.5367 23.3289 20.6655L23.3031 20.6913L23.2953 20.7004L23.2915 20.703L23.2902 20.7042L22.6314 20.0481L23.2902 20.7068C23.1084 20.8886 22.862 20.9907 22.6049 20.9907C22.3479 20.9907 22.1014 20.8886 21.9197 20.7068C21.738 20.5251 21.6359 20.2786 21.6359 20.0216C21.6359 19.7646 21.738 19.5181 21.9197 19.3364L21.9184 19.3377L21.9158 19.339L21.9223 19.3325L21.9649 19.286C22.0063 19.2412 22.0661 19.1693 22.1445 19.0703C22.9616 18.0035 23.4513 16.7224 23.554 15.3826C23.6568 14.0428 23.3681 12.7019 22.7231 11.5231C22.5547 11.2128 22.3612 10.9169 22.1445 10.6383C22.0743 10.5476 22.0002 10.4602 21.9223 10.3761L21.9158 10.3696C21.7357 10.1876 21.635 9.94162 21.6357 9.68553C21.6365 9.42944 21.7386 9.18406 21.9197 9.00304Z"
+                        fill="#016FEF"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M25.7947 5.12801C25.9763 4.94659 26.2225 4.84469 26.4792 4.84469C26.736 4.84469 26.9822 4.94659 27.1638 5.12801L27.1677 5.13059L27.1716 5.13447L27.1832 5.14738C27.2392 5.20261 27.2926 5.26036 27.3434 5.32047C27.4454 5.43542 27.5862 5.60205 27.7515 5.81776C28.0835 6.24788 28.5188 6.8808 28.9515 7.70359C29.8169 9.34917 30.6772 11.7633 30.6772 14.8543C30.6772 17.9452 29.8169 20.3593 28.9515 22.0062C28.6068 22.6683 28.2053 23.2993 27.7515 23.892C27.573 24.1241 27.3834 24.3474 27.1832 24.5611L27.1703 24.574L27.1677 24.5779L27.1651 24.5792L26.4792 23.8959L27.1638 24.5805C26.9812 24.7571 26.7365 24.8548 26.4825 24.8527C26.2285 24.8506 25.9855 24.7489 25.8058 24.5693C25.6261 24.3898 25.5241 24.1469 25.5218 23.8929C25.5195 23.6389 25.617 23.3941 25.7934 23.2113L25.8115 23.1933L25.8928 23.1028C25.9695 23.0185 26.0771 22.8876 26.2157 22.7102C26.4896 22.3537 26.8616 21.815 27.2362 21.1033C27.9853 19.6825 28.7397 17.5758 28.7397 14.8543C28.7397 12.1327 27.9853 10.026 27.2362 8.60517C26.9421 8.04167 26.6007 7.50413 26.2157 6.99834C26.0876 6.8319 25.9527 6.67074 25.8115 6.51526L25.7934 6.49717C25.612 6.31553 25.5101 6.06931 25.5101 5.81259C25.5101 5.55587 25.6132 5.30965 25.7947 5.12801ZM15.5479 4.38659C17.0501 3.39588 19.0522 4.47442 19.0522 6.27372V24.7265C19.0522 26.527 17.0501 27.6043 15.5479 26.6136L7.79787 21.505C7.74544 21.4701 7.68393 21.4512 7.62091 21.4508H3.87508C2.93301 21.4508 2.02952 21.0766 1.36338 20.4104C0.697234 19.7443 0.322998 18.8408 0.322998 17.8987V13.1015C0.322998 12.635 0.414875 12.1731 0.593384 11.7421C0.771893 11.3112 1.03354 10.9196 1.36338 10.5898C1.69322 10.2599 2.0848 9.99828 2.51576 9.81977C2.94672 9.64126 3.40862 9.54938 3.87508 9.54938H7.62091C7.68424 9.54959 7.74623 9.53117 7.79916 9.49642L15.5479 4.38659Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
+                  </div>
+                  <p class="section-pricing__feature-card-title">Sound redirection</p>
+                  <p class="section-pricing__feature-card-des">
+                    Redirects audio from the remote desktop to the local device, allowing users to hear notifications,
+                    media, or system sounds in real-time.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__feature-card">
+                  <div class="section-pricing__icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                      <path
+                        opacity="0.5"
+                        d="M14.5834 2.91675H20.4167C25.9161 2.91675 28.6665 2.91675 30.3742 4.62591C32.082 6.33508 32.0834 9.08404 32.0834 14.5834V16.0417C32.0834 16.8467 32.0834 18.3022 32.0747 18.9584H2.92696C2.91675 18.3022 2.91675 16.8467 2.91675 16.0417V14.5834C2.91675 9.08404 2.91675 6.33362 4.62591 4.62591C6.33508 2.91821 9.08404 2.91675 14.5834 2.91675Z"
+                        fill="#016FEF"
+                      />
+                      <path
+                        d="M11.6449 25.5208C7.50321 25.5208 5.43237 25.5208 4.14758 24.2389C3.31341 23.4091 3.01883 22.2512 2.91675 20.4166V18.9583H32.0834V20.4166C31.9813 22.2512 31.6867 23.4091 30.8526 24.2389C29.5663 25.5208 27.497 25.5208 23.3567 25.5208H18.5982V31.3541H23.3553C23.962 31.3541 24.4534 31.8441 24.4534 32.4478C24.4534 33.0516 23.962 33.5416 23.3553 33.5416H11.6449C11.5009 33.5422 11.3582 33.5143 11.225 33.4596C11.0918 33.4049 10.9707 33.3244 10.8686 33.2228C10.7666 33.1212 10.6857 33.0004 10.6304 32.8674C10.5752 32.7344 10.5467 32.5918 10.5467 32.4478C10.5467 31.8441 11.0382 31.3541 11.6449 31.3541H16.402V25.5208H11.6449Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
+                  </div>
+                  <p class="section-pricing__feature-card-title">Multi monitor support</p>
+                  <p class="section-pricing__feature-card-des">
+                    Enables users to extend the remote desktop across multiple monitors, allowing a multi-display setup
+                    for improved productivity.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__feature-card">
+                  <div class="section-pricing__icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                      <path
+                        d="M15.5 2.0625C15.6543 2.06251 15.8063 2.10062 15.9423 2.17346C16.0784 2.24629 16.1944 2.35158 16.28 2.48L18.78 6.23C18.8499 6.3324 18.8988 6.44764 18.9239 6.56906C18.9489 6.69049 18.9497 6.81567 18.926 6.93738C18.9024 7.05908 18.8548 7.17489 18.7861 7.2781C18.7174 7.3813 18.6289 7.46985 18.5258 7.53862C18.4226 7.6074 18.3068 7.65502 18.1851 7.67875C18.0634 7.70248 17.9382 7.70183 17.8168 7.67685C17.6954 7.65186 17.5801 7.60304 17.4777 7.53321C17.3752 7.46337 17.2876 7.37391 17.22 7.27L16.4375 6.09625V19.24C16.5892 19.1625 16.7475 19.0958 16.9125 19.04L20.9938 17.68C21.6313 17.4675 22.0625 16.8713 22.0625 16.1987V13.8862C21.7633 13.8342 21.487 13.6925 21.27 13.48C21.029 13.2301 20.8789 12.9066 20.8438 12.5613C20.8176 12.3059 20.8071 12.0491 20.8125 11.7925V11.7075C20.8125 11.45 20.8125 11.1737 20.8438 10.9387C20.8813 10.665 20.975 10.3138 21.27 10.02C21.565 9.725 21.915 9.63125 22.1888 9.59375C22.4238 9.5625 22.7013 9.5625 22.9575 9.5625H23.0438C23.3 9.5625 23.5763 9.5625 23.8113 9.59375C24.085 9.63125 24.4363 9.725 24.73 10.02C25.025 10.315 25.1188 10.665 25.1563 10.9387C25.1875 11.1737 25.1875 11.4512 25.1875 11.7075V11.7925C25.1875 12.05 25.1875 12.3263 25.1563 12.5613C25.1188 12.835 25.025 13.1862 24.73 13.48C24.48 13.73 24.1875 13.8363 23.9375 13.885V16.1975C23.9378 16.9192 23.711 17.6226 23.2892 18.2082C22.8675 18.7937 22.2721 19.2317 21.5875 19.46L17.5063 20.82C17.195 20.9237 16.9243 21.1226 16.7325 21.3887C16.5407 21.6548 16.4375 21.9745 16.4375 22.3025V23.1813C16.9753 23.3988 17.4208 23.7967 17.6974 24.3066C17.9741 24.8166 18.0648 25.4069 17.954 25.9764C17.8431 26.5458 17.5377 27.0591 17.09 27.428C16.6423 27.797 16.0802 27.9988 15.5 27.9988C14.9198 27.9988 14.3577 27.797 13.91 27.428C13.4623 27.0591 13.1569 26.5458 13.046 25.9764C12.9352 25.4069 13.0259 24.8166 13.3026 24.3066C13.5793 23.7967 14.0247 23.3988 14.5625 23.1813V18.5525C14.5625 18.2245 14.4593 17.9048 14.2675 17.6387C14.0757 17.3726 13.805 17.1737 13.4938 17.07L9.4125 15.7087C8.72812 15.4805 8.13289 15.0427 7.71112 14.4574C7.28936 13.8721 7.06244 13.1689 7.0625 12.4475V9.9775C6.61376 9.76464 6.25081 9.40542 6.03334 8.95889C5.81587 8.51237 5.75683 8.00513 5.86592 7.52059C5.97502 7.03606 6.24575 6.60307 6.6336 6.29283C7.02146 5.98259 7.50334 5.81358 8 5.81358C8.49667 5.81358 8.97855 5.98259 9.3664 6.29283C9.75426 6.60307 10.025 7.03606 10.1341 7.52059C10.2432 8.00513 10.1841 8.51237 9.96666 8.95889C9.74919 9.40542 9.38624 9.76464 8.9375 9.9775V12.4475C8.9375 13.1212 9.3675 13.7175 10.0063 13.93L14.0875 15.2913C14.2525 15.3463 14.4108 15.4125 14.5625 15.49V6.09625L13.78 7.27C13.7124 7.37391 13.6248 7.46337 13.5224 7.53321C13.4199 7.60304 13.3046 7.65186 13.1832 7.67685C13.0618 7.70183 12.9366 7.70248 12.8149 7.67875C12.6932 7.65502 12.5774 7.6074 12.4743 7.53862C12.3711 7.46985 12.2826 7.3813 12.2139 7.2781C12.1452 7.17489 12.0976 7.05908 12.074 6.93738C12.0503 6.81567 12.0511 6.69049 12.0761 6.56906C12.1012 6.44764 12.1501 6.3324 12.22 6.23L14.72 2.48C14.8056 2.35158 14.9216 2.24629 15.0577 2.17346C15.1937 2.10062 15.3457 2.06251 15.5 2.0625Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
+                  </div>
+                  <p class="section-pricing__feature-card-title">USB redirection</p>
+                  <p class="section-pricing__feature-card-des">
+                    Redirects USB devices connected to the local machine (e.g., printers, scanners) for use on the
+                    remote desktop
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="section-pricing__price-section-title-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="42" viewBox="0 0 40 42" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.1033 0.978516H19.8953C18.0973 0.978516 16.5993 0.978516 15.4113 1.13659C14.1553 1.30256 13.0213 1.67008 12.1113 2.56912C11.1993 3.47013 10.8273 4.59047 10.6593 5.82936C10.5453 6.67307 10.5113 8.68652 10.5033 10.4135C6.45927 10.5458 4.02927 11.0122 2.34327 12.6798C-0.00073266 14.9936 -0.000732422 18.7202 -0.000732422 26.1713C-0.000732422 33.6224 -0.00073266 37.349 2.34327 39.6628C4.68727 41.9765 8.45727 41.9785 15.9993 41.9785H23.9993C31.5413 41.9785 35.3133 41.9785 37.6553 39.6628C39.9973 37.347 39.9993 33.6224 39.9993 26.1713C39.9993 18.7202 39.9993 14.9936 37.6553 12.6798C35.9693 11.0122 33.5393 10.5458 29.4953 10.4154C29.4873 8.68652 29.4553 6.67307 29.3393 5.83134C29.1713 4.59047 28.7993 3.47013 27.8873 2.57109C26.9773 1.67008 25.8433 1.30256 24.5873 1.13659C23.3993 0.978516 21.8993 0.978516 20.1033 0.978516ZM26.4953 10.368C26.4853 8.69442 26.4573 6.89437 26.3673 6.22454C26.2413 5.31365 26.0273 4.92242 25.7673 4.66555C25.5073 4.40868 25.1113 4.19726 24.1873 4.07278C23.2233 3.94632 21.9273 3.94237 19.9993 3.94237C18.0713 3.94237 16.7753 3.94632 15.8093 4.07476C14.8873 4.19726 14.4913 4.40868 14.2313 4.66753C13.9713 4.92637 13.7573 5.31365 13.6313 6.22454C13.5413 6.89635 13.5113 8.69442 13.5033 10.368C14.2873 10.3641 15.1193 10.3627 15.9993 10.3641H23.9993C24.8819 10.3641 25.7139 10.3654 26.4953 10.368ZM19.9993 16.7857C20.3971 16.7857 20.7786 16.9419 21.0599 17.2198C21.3412 17.4977 21.4993 17.8746 21.4993 18.2677V18.2874C23.6773 18.8288 25.4993 20.5261 25.4993 22.8775C25.4993 23.2705 25.3412 23.6474 25.0599 23.9253C24.7786 24.2033 24.3971 24.3594 23.9993 24.3594C23.6014 24.3594 23.2199 24.2033 22.9386 23.9253C22.6573 23.6474 22.4993 23.2705 22.4993 22.8775C22.4993 22.1187 21.6473 21.0675 19.9993 21.0675C18.3513 21.0675 17.4993 22.1187 17.4993 22.8775C17.4993 23.6362 18.3513 24.6894 19.9993 24.6894C22.7693 24.6894 25.4993 26.5862 25.4993 29.4651C25.4993 31.8164 23.6773 33.5118 21.4993 34.0551V34.0749C21.4993 34.4679 21.3412 34.8449 21.0599 35.1228C20.7786 35.4007 20.3971 35.5568 19.9993 35.5568C19.6014 35.5568 19.2199 35.4007 18.9386 35.1228C18.6573 34.8449 18.4993 34.4679 18.4993 34.0749V34.0551C16.3213 33.5137 14.4993 31.8164 14.4993 29.4651C14.4993 29.0721 14.6573 28.6952 14.9386 28.4172C15.2199 28.1393 15.6014 27.9832 15.9993 27.9832C16.3971 27.9832 16.7786 28.1393 17.0599 28.4172C17.3412 28.6952 17.4993 29.0721 17.4993 29.4651C17.4993 30.2239 18.3513 31.275 19.9993 31.275C21.6473 31.275 22.4993 30.2239 22.4993 29.4651C22.4993 28.7064 21.6473 27.6532 19.9993 27.6532C17.2293 27.6532 14.4993 25.7563 14.4993 22.8775C14.4993 20.5261 16.3213 18.8288 18.4993 18.2874V18.2677C18.4993 17.8746 18.6573 17.4977 18.9386 17.2198C19.2199 16.9419 19.6014 16.7857 19.9993 16.7857Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="section-pricing__price-section-title">License prices <span>/Individual</span></p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__pricing-card">
+                  <div class="section-pricing__pricing-card--first-row">
+                    <div class="section-pricing__pricing-card--number-round">
+                      <p class="section-pricing__pricing-card--number-round--number">5-99</p>
+                      <p class="section-pricing__pricing-card--number-round--text">employee</p>
+                    </div>
+                    <div class="section-pricing__pricing-card-title">
+                      <p class="section-pricing__pricing-card-title--1">Volume License</p>
+                      <p class="section-pricing__pricing-card-title--2">Per users/per year</p>
+                    </div>
+                  </div>
+                  <p class="section-pricing__pricing-card-des">Great for small business</p>
+                  <p class="section-pricing__pricing-card-price">$9.99</p>
+                  <div class="section-pricing__pricing-card-getdimo">
+                    <a class="section-pricing__pricing-card-getdimo-text">Get a demo</a>
+                    <a class="section-pricing__pricing-card-getdimo-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.26144 6.61102L1.65212 11.5L0.5 10.278L4.53325 6L0.5 1.72203L1.65212 0.5L6.26144 5.38898C6.41419 5.55105 6.5 5.77084 6.5 6C6.5 6.22916 6.41419 6.44895 6.26144 6.61102Z"
+                          fill="#016FEF"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__pricing-card">
+                  <div class="section-pricing__pricing-card--first-row">
+                    <div class="section-pricing__pricing-card--number-round">
+                      <p class="section-pricing__pricing-card--number-round--number">100-999</p>
+                      <p class="section-pricing__pricing-card--number-round--text">employee</p>
+                    </div>
+                    <div class="section-pricing__pricing-card-title">
+                      <p class="section-pricing__pricing-card-title--1">Volume License</p>
+                      <p class="section-pricing__pricing-card-title--2">Per users/per year</p>
+                    </div>
+                  </div>
+                  <p class="section-pricing__pricing-card-des">Great for small business</p>
+                  <p class="section-pricing__pricing-card-price">$8.99</p>
+                  <div class="section-pricing__pricing-card-getdimo">
+                    <a class="section-pricing__pricing-card-getdimo-text">Get a demo</a>
+                    <a class="section-pricing__pricing-card-getdimo-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.26144 6.61102L1.65212 11.5L0.5 10.278L4.53325 6L0.5 1.72203L1.65212 0.5L6.26144 5.38898C6.41419 5.55105 6.5 5.77084 6.5 6C6.5 6.22916 6.41419 6.44895 6.26144 6.61102Z"
+                          fill="#016FEF"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="section-pricing__pricing-card">
+                  <div class="section-pricing__pricing-card--first-row">
+                    <div class="section-pricing__pricing-card--number-round">
+                      <p class="section-pricing__pricing-card--number-round--number">1000 +</p>
+                      <p class="section-pricing__pricing-card--number-round--text">employee</p>
+                    </div>
+                    <div class="section-pricing__pricing-card-title">
+                      <p class="section-pricing__pricing-card-title--1">Volume License</p>
+                      <p class="section-pricing__pricing-card-title--2">Per users/per year</p>
+                    </div>
+                  </div>
+                  <p class="section-pricing__pricing-card-des">Great for small business</p>
+                  <p class="section-pricing__pricing-card-price">$7.99</p>
+                  <div class="section-pricing__pricing-card-getdimo">
+                    <a class="section-pricing__pricing-card-getdimo-text">Get a demo</a>
+                    <a class="section-pricing__pricing-card-getdimo-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.26144 6.61102L1.65212 11.5L0.5 10.278L4.53325 6L0.5 1.72203L1.65212 0.5L6.26144 5.38898C6.41419 5.55105 6.5 5.77084 6.5 6C6.5 6.22916 6.41419 6.44895 6.26144 6.61102Z"
+                          fill="#016FEF"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row section-pricing__pricing-row align-items-center justify-content-center" id="yearly">
-          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
-            <div class="section-pricing__pricing-card pro">
-              <div class="section-pricing__pricing-card--top">
-                <div class="section-pricing__pricing-card--type pro">
-                  <p class="section-pricing__pricing-card--type-text pro">Professional</p>
+
+        <div class="row section-pricing__pricing-row align-items-center justify-content-center" id="enterprise-row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="section-pricing__sub-toggle-btn-wrap">
+              <button class="sub-toggle-btn active">Individual License</button>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="section-pricing__section-title">Enjoy the Best Features of Our Remote Desktop Starting Free</p>
+          </div>
+          <div class="row align-items-center justify-content-center section-pricing__feature-card-border">
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.9197 9.00304C22.1014 8.82163 22.3476 8.71973 22.6043 8.71973C22.861 8.71973 23.1072 8.82163 23.2889 9.00304L23.2915 9.00562L23.2953 9.00821L23.3044 9.01725L23.3302 9.04308L23.4103 9.13221C23.4749 9.20583 23.5653 9.31046 23.6699 9.4435C24.8634 10.9948 25.5105 12.8971 25.5105 14.8543C25.5105 16.8115 24.8634 18.7138 23.6699 20.2651C23.5617 20.4031 23.448 20.5367 23.3289 20.6655L23.3031 20.6913L23.2953 20.7004L23.2915 20.703L23.2902 20.7042L22.6314 20.0481L23.2902 20.7068C23.1084 20.8886 22.862 20.9907 22.6049 20.9907C22.3479 20.9907 22.1014 20.8886 21.9197 20.7068C21.738 20.5251 21.6359 20.2786 21.6359 20.0216C21.6359 19.7646 21.738 19.5181 21.9197 19.3364L21.9184 19.3377L21.9158 19.339L21.9223 19.3325L21.9649 19.286C22.0063 19.2412 22.0661 19.1693 22.1445 19.0703C22.9616 18.0035 23.4513 16.7224 23.554 15.3826C23.6568 14.0428 23.3681 12.7019 22.7231 11.5231C22.5547 11.2128 22.3612 10.9169 22.1445 10.6383C22.0743 10.5476 22.0002 10.4602 21.9223 10.3761L21.9158 10.3696C21.7357 10.1876 21.635 9.94162 21.6357 9.68553C21.6365 9.42944 21.7386 9.18406 21.9197 9.00304Z"
+                      fill="#016FEF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M25.7947 5.12801C25.9763 4.94659 26.2225 4.84469 26.4792 4.84469C26.736 4.84469 26.9822 4.94659 27.1638 5.12801L27.1677 5.13059L27.1716 5.13447L27.1832 5.14738C27.2392 5.20261 27.2926 5.26036 27.3434 5.32047C27.4454 5.43542 27.5862 5.60205 27.7515 5.81776C28.0835 6.24788 28.5188 6.8808 28.9515 7.70359C29.8169 9.34917 30.6772 11.7633 30.6772 14.8543C30.6772 17.9452 29.8169 20.3593 28.9515 22.0062C28.6068 22.6683 28.2053 23.2993 27.7515 23.892C27.573 24.1241 27.3834 24.3474 27.1832 24.5611L27.1703 24.574L27.1677 24.5779L27.1651 24.5792L26.4792 23.8959L27.1638 24.5805C26.9812 24.7571 26.7365 24.8548 26.4825 24.8527C26.2285 24.8506 25.9855 24.7489 25.8058 24.5693C25.6261 24.3898 25.5241 24.1469 25.5218 23.8929C25.5195 23.6389 25.617 23.3941 25.7934 23.2113L25.8115 23.1933L25.8928 23.1028C25.9695 23.0185 26.0771 22.8876 26.2157 22.7102C26.4896 22.3537 26.8616 21.815 27.2362 21.1033C27.9853 19.6825 28.7397 17.5758 28.7397 14.8543C28.7397 12.1327 27.9853 10.026 27.2362 8.60517C26.9421 8.04167 26.6007 7.50413 26.2157 6.99834C26.0876 6.8319 25.9527 6.67074 25.8115 6.51526L25.7934 6.49717C25.612 6.31553 25.5101 6.06931 25.5101 5.81259C25.5101 5.55587 25.6132 5.30965 25.7947 5.12801ZM15.5479 4.38659C17.0501 3.39588 19.0522 4.47442 19.0522 6.27372V24.7265C19.0522 26.527 17.0501 27.6043 15.5479 26.6136L7.79787 21.505C7.74544 21.4701 7.68393 21.4512 7.62091 21.4508H3.87508C2.93301 21.4508 2.02952 21.0766 1.36338 20.4104C0.697234 19.7443 0.322998 18.8408 0.322998 17.8987V13.1015C0.322998 12.635 0.414875 12.1731 0.593384 11.7421C0.771893 11.3112 1.03354 10.9196 1.36338 10.5898C1.69322 10.2599 2.0848 9.99828 2.51576 9.81977C2.94672 9.64126 3.40862 9.54938 3.87508 9.54938H7.62091C7.68424 9.54959 7.74623 9.53117 7.79916 9.49642L15.5479 4.38659Z"
+                      fill="#016FEF"
+                    />
+                  </svg>
                 </div>
-                <p class="section-pricing__pricing-card--des pro">
-                  Perfect for businesses needing advanced <br class="d-none d-xl-block" />
-                  remote capabilities.
+                <p class="section-pricing__feature-card-title">Sound redirection</p>
+                <p class="section-pricing__feature-card-des">
+                  Redirects audio from the remote desktop to the local device, allowing users to hear notifications,
+                  media, or system sounds in real-time.
                 </p>
-                <!-- <p class="section-pricing__pricing-card--method pro">$20 <span>/month</span></p> -->
-                <div class="section-pricing__pricing-card--middle__line"></div>
-                <div class="section-pricing__pricing-card--point__wrap">
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Everything in Basic.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Device and audio redirection.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Multi-monitor support.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text pro">Advanced encryption for secure access.</p>
-                  </div>
-                </div>
               </div>
-              <div class="section-pricing__pricing-card--bottom pro">
-                <a href="" class="section-pricing__pricing-card--downlod text-highlight pro"> Get Started </a>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                    <path
+                      opacity="0.5"
+                      d="M14.5834 2.91675H20.4167C25.9161 2.91675 28.6665 2.91675 30.3742 4.62591C32.082 6.33508 32.0834 9.08404 32.0834 14.5834V16.0417C32.0834 16.8467 32.0834 18.3022 32.0747 18.9584H2.92696C2.91675 18.3022 2.91675 16.8467 2.91675 16.0417V14.5834C2.91675 9.08404 2.91675 6.33362 4.62591 4.62591C6.33508 2.91821 9.08404 2.91675 14.5834 2.91675Z"
+                      fill="#016FEF"
+                    />
+                    <path
+                      d="M11.6449 25.5208C7.50321 25.5208 5.43237 25.5208 4.14758 24.2389C3.31341 23.4091 3.01883 22.2512 2.91675 20.4166V18.9583H32.0834V20.4166C31.9813 22.2512 31.6867 23.4091 30.8526 24.2389C29.5663 25.5208 27.497 25.5208 23.3567 25.5208H18.5982V31.3541H23.3553C23.962 31.3541 24.4534 31.8441 24.4534 32.4478C24.4534 33.0516 23.962 33.5416 23.3553 33.5416H11.6449C11.5009 33.5422 11.3582 33.5143 11.225 33.4596C11.0918 33.4049 10.9707 33.3244 10.8686 33.2228C10.7666 33.1212 10.6857 33.0004 10.6304 32.8674C10.5752 32.7344 10.5467 32.5918 10.5467 32.4478C10.5467 31.8441 11.0382 31.3541 11.6449 31.3541H16.402V25.5208H11.6449Z"
+                      fill="#016FEF"
+                    />
+                  </svg>
+                </div>
+                <p class="section-pricing__feature-card-title">Multi monitor support</p>
+                <p class="section-pricing__feature-card-des">
+                  Enables users to extend the remote desktop across multiple monitors, allowing a multi-display setup
+                  for improved productivity.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <path
+                      d="M15.5 2.0625C15.6543 2.06251 15.8063 2.10062 15.9423 2.17346C16.0784 2.24629 16.1944 2.35158 16.28 2.48L18.78 6.23C18.8499 6.3324 18.8988 6.44764 18.9239 6.56906C18.9489 6.69049 18.9497 6.81567 18.926 6.93738C18.9024 7.05908 18.8548 7.17489 18.7861 7.2781C18.7174 7.3813 18.6289 7.46985 18.5258 7.53862C18.4226 7.6074 18.3068 7.65502 18.1851 7.67875C18.0634 7.70248 17.9382 7.70183 17.8168 7.67685C17.6954 7.65186 17.5801 7.60304 17.4777 7.53321C17.3752 7.46337 17.2876 7.37391 17.22 7.27L16.4375 6.09625V19.24C16.5892 19.1625 16.7475 19.0958 16.9125 19.04L20.9938 17.68C21.6313 17.4675 22.0625 16.8713 22.0625 16.1987V13.8862C21.7633 13.8342 21.487 13.6925 21.27 13.48C21.029 13.2301 20.8789 12.9066 20.8438 12.5613C20.8176 12.3059 20.8071 12.0491 20.8125 11.7925V11.7075C20.8125 11.45 20.8125 11.1737 20.8438 10.9387C20.8813 10.665 20.975 10.3138 21.27 10.02C21.565 9.725 21.915 9.63125 22.1888 9.59375C22.4238 9.5625 22.7013 9.5625 22.9575 9.5625H23.0438C23.3 9.5625 23.5763 9.5625 23.8113 9.59375C24.085 9.63125 24.4363 9.725 24.73 10.02C25.025 10.315 25.1188 10.665 25.1563 10.9387C25.1875 11.1737 25.1875 11.4512 25.1875 11.7075V11.7925C25.1875 12.05 25.1875 12.3263 25.1563 12.5613C25.1188 12.835 25.025 13.1862 24.73 13.48C24.48 13.73 24.1875 13.8363 23.9375 13.885V16.1975C23.9378 16.9192 23.711 17.6226 23.2892 18.2082C22.8675 18.7937 22.2721 19.2317 21.5875 19.46L17.5063 20.82C17.195 20.9237 16.9243 21.1226 16.7325 21.3887C16.5407 21.6548 16.4375 21.9745 16.4375 22.3025V23.1813C16.9753 23.3988 17.4208 23.7967 17.6974 24.3066C17.9741 24.8166 18.0648 25.4069 17.954 25.9764C17.8431 26.5458 17.5377 27.0591 17.09 27.428C16.6423 27.797 16.0802 27.9988 15.5 27.9988C14.9198 27.9988 14.3577 27.797 13.91 27.428C13.4623 27.0591 13.1569 26.5458 13.046 25.9764C12.9352 25.4069 13.0259 24.8166 13.3026 24.3066C13.5793 23.7967 14.0247 23.3988 14.5625 23.1813V18.5525C14.5625 18.2245 14.4593 17.9048 14.2675 17.6387C14.0757 17.3726 13.805 17.1737 13.4938 17.07L9.4125 15.7087C8.72812 15.4805 8.13289 15.0427 7.71112 14.4574C7.28936 13.8721 7.06244 13.1689 7.0625 12.4475V9.9775C6.61376 9.76464 6.25081 9.40542 6.03334 8.95889C5.81587 8.51237 5.75683 8.00513 5.86592 7.52059C5.97502 7.03606 6.24575 6.60307 6.6336 6.29283C7.02146 5.98259 7.50334 5.81358 8 5.81358C8.49667 5.81358 8.97855 5.98259 9.3664 6.29283C9.75426 6.60307 10.025 7.03606 10.1341 7.52059C10.2432 8.00513 10.1841 8.51237 9.96666 8.95889C9.74919 9.40542 9.38624 9.76464 8.9375 9.9775V12.4475C8.9375 13.1212 9.3675 13.7175 10.0063 13.93L14.0875 15.2913C14.2525 15.3463 14.4108 15.4125 14.5625 15.49V6.09625L13.78 7.27C13.7124 7.37391 13.6248 7.46337 13.5224 7.53321C13.4199 7.60304 13.3046 7.65186 13.1832 7.67685C13.0618 7.70183 12.9366 7.70248 12.8149 7.67875C12.6932 7.65502 12.5774 7.6074 12.4743 7.53862C12.3711 7.46985 12.2826 7.3813 12.2139 7.2781C12.1452 7.17489 12.0976 7.05908 12.074 6.93738C12.0503 6.81567 12.0511 6.69049 12.0761 6.56906C12.1012 6.44764 12.1501 6.3324 12.22 6.23L14.72 2.48C14.8056 2.35158 14.9216 2.24629 15.0577 2.17346C15.1937 2.10062 15.3457 2.06251 15.5 2.0625Z"
+                      fill="#016FEF"
+                    />
+                  </svg>
+                </div>
+                <p class="section-pricing__feature-card-title">USB redirection</p>
+                <p class="section-pricing__feature-card-des">
+                  Redirects USB devices connected to the local machine (e.g., printers, scanners) for use on the remote
+                  desktop
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <g clip-path="url(#clip0_1478_1551)">
+                      <path
+                        d="M16 7.99992C19.4933 7.99992 22.5067 10.4799 23.1867 13.9066L23.5867 15.9066L25.6267 16.0533C26.629 16.1207 27.5686 16.5652 28.2563 17.2975C28.944 18.0298 29.3289 18.9953 29.3333 19.9999C29.3333 22.1999 27.5333 23.9999 25.3333 23.9999H8C5.05333 23.9999 2.66667 21.6133 2.66667 18.6666C2.66667 15.9333 4.70667 13.6533 7.41333 13.3733L8.84 13.2266L9.50667 11.9599C10.12 10.7664 11.0506 9.76518 12.1963 9.06651C13.3419 8.36783 14.6581 7.99876 16 7.99992ZM16 5.33325C12.1467 5.33325 8.8 7.51992 7.13333 10.7199C5.17365 10.9317 3.36134 11.8602 2.04465 13.327C0.727961 14.7938 -0.000228936 16.6955 5.39903e-08 18.6666C5.39903e-08 23.0799 3.58667 26.6666 8 26.6666H25.3333C29.0133 26.6666 32 23.6799 32 19.9999C32 16.4799 29.2667 13.6266 25.8 13.3866C25.3521 11.1169 24.1301 9.07306 22.3428 7.60425C20.5554 6.13543 18.3135 5.33273 16 5.33325Z"
+                        fill="#016FEF"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1478_1551">
+                        <rect width="32" height="32" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="section-pricing__feature-card-title">Drive redirection</p>
+                <p class="section-pricing__feature-card-des">
+                  Redirects local file system drives to the remote desktop, enabling file transfers between local and
+                  remote environments.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path
+                      d="M20.1875 4.4375C19.2924 4.4375 18.4339 4.79308 17.801 5.42601C17.1681 6.05895 16.8125 6.91739 16.8125 7.8125C16.8125 8.70761 17.1681 9.56605 17.801 10.199C18.4339 10.8319 19.2924 11.1875 20.1875 11.1875C21.0826 11.1875 21.9411 10.8319 22.574 10.199C23.2069 9.56605 23.5625 8.70761 23.5625 7.8125C23.5625 6.91739 23.2069 6.05895 22.574 5.42601C21.9411 4.79308 21.0826 4.4375 20.1875 4.4375ZM14.5625 7.8125C14.5625 6.32066 15.1551 4.88992 16.21 3.83502C17.2649 2.78013 18.6957 2.1875 20.1875 2.1875C21.6793 2.1875 23.1101 2.78013 24.165 3.83502C25.2199 4.88992 25.8125 6.32066 25.8125 7.8125C25.8125 9.30434 25.2199 10.7351 24.165 11.79C23.1101 12.8449 21.6793 13.4375 20.1875 13.4375C18.6957 13.4375 17.2649 12.8449 16.21 11.79C15.1551 10.7351 14.5625 9.30434 14.5625 7.8125ZM2.75 2.75H12.875V12.875H2.75V2.75ZM5 5V10.625H10.625V5H5ZM2.75 15.125H12.875V25.25H2.75V15.125ZM5 17.375V23H10.625V17.375H5ZM15.125 15.125H25.25V25.25H15.125V15.125ZM23 17.375H17.375V23H23V17.375Z"
+                      fill="#016FEF"
+                    />
+                  </svg>
+                </div>
+                <p class="section-pricing__feature-card-title">Virtual app delivery</p>
+                <p class="section-pricing__feature-card-des">
+                  Provides delivery of applications to end-user devices via a centralized system, eliminating the need
+                  for local installations.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__feature-card">
+                <div class="section-pricing__icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M18.4688 8.40625L19.4851 9.42256L17.6264 11.2812H22.0625V12.7188H17.6264L19.4851 14.5774L18.4688 15.5938L14.875 12L18.4688 8.40625Z"
+                      fill="#016FEF"
+                    />
+                    <path
+                      d="M22.0625 20.625H14.875C14.4938 20.625 14.1281 20.4735 13.8585 20.204C13.589 19.9344 13.4375 19.5687 13.4375 19.1875V4.8125C13.4375 4.43125 13.589 4.06562 13.8585 3.79603C14.1281 3.52645 14.4938 3.375 14.875 3.375H22.0625V4.8125H14.875V19.1875H22.0625V20.625ZM9.125 20.625H1.9375V19.1875H9.125V4.8125H1.9375V3.375H9.125C9.50625 3.375 9.87188 3.52645 10.1415 3.79603C10.411 4.06562 10.5625 4.43125 10.5625 4.8125V19.1875C10.5625 19.5687 10.411 19.9344 10.1415 20.204C9.87188 20.4735 9.50625 20.625 9.125 20.625Z"
+                      fill="#016FEF"
+                    />
+                    <path
+                      d="M5.53125 8.40625L4.51494 9.42256L6.37362 11.2812H1.9375V12.7188H6.37362L4.51494 14.5774L5.53125 15.5938L9.125 12L5.53125 8.40625Z"
+                      fill="#016FEF"
+                    />
+                  </svg>
+                </div>
+                <p class="section-pricing__feature-card-title">Video redirection</p>
+                <p class="section-pricing__feature-card-des">
+                  Codimite's RDP Web Client allows seamless video streaming from Windows to Chromebooks.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
-            <div class="section-pricing__pricing-card">
-              <div class="section-pricing__pricing-card--top">
-                <div class="section-pricing__pricing-card--type">
-                  <p class="section-pricing__pricing-card--type-text">Basic</p>
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="section-pricing__price-section-title-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="42" viewBox="0 0 40 42" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20.1033 0.978516H19.8953C18.0973 0.978516 16.5993 0.978516 15.4113 1.13659C14.1553 1.30256 13.0213 1.67008 12.1113 2.56912C11.1993 3.47013 10.8273 4.59047 10.6593 5.82936C10.5453 6.67307 10.5113 8.68652 10.5033 10.4135C6.45927 10.5458 4.02927 11.0122 2.34327 12.6798C-0.00073266 14.9936 -0.000732422 18.7202 -0.000732422 26.1713C-0.000732422 33.6224 -0.00073266 37.349 2.34327 39.6628C4.68727 41.9765 8.45727 41.9785 15.9993 41.9785H23.9993C31.5413 41.9785 35.3133 41.9785 37.6553 39.6628C39.9973 37.347 39.9993 33.6224 39.9993 26.1713C39.9993 18.7202 39.9993 14.9936 37.6553 12.6798C35.9693 11.0122 33.5393 10.5458 29.4953 10.4154C29.4873 8.68652 29.4553 6.67307 29.3393 5.83134C29.1713 4.59047 28.7993 3.47013 27.8873 2.57109C26.9773 1.67008 25.8433 1.30256 24.5873 1.13659C23.3993 0.978516 21.8993 0.978516 20.1033 0.978516ZM26.4953 10.368C26.4853 8.69442 26.4573 6.89437 26.3673 6.22454C26.2413 5.31365 26.0273 4.92242 25.7673 4.66555C25.5073 4.40868 25.1113 4.19726 24.1873 4.07278C23.2233 3.94632 21.9273 3.94237 19.9993 3.94237C18.0713 3.94237 16.7753 3.94632 15.8093 4.07476C14.8873 4.19726 14.4913 4.40868 14.2313 4.66753C13.9713 4.92637 13.7573 5.31365 13.6313 6.22454C13.5413 6.89635 13.5113 8.69442 13.5033 10.368C14.2873 10.3641 15.1193 10.3627 15.9993 10.3641H23.9993C24.8819 10.3641 25.7139 10.3654 26.4953 10.368ZM19.9993 16.7857C20.3971 16.7857 20.7786 16.9419 21.0599 17.2198C21.3412 17.4977 21.4993 17.8746 21.4993 18.2677V18.2874C23.6773 18.8288 25.4993 20.5261 25.4993 22.8775C25.4993 23.2705 25.3412 23.6474 25.0599 23.9253C24.7786 24.2033 24.3971 24.3594 23.9993 24.3594C23.6014 24.3594 23.2199 24.2033 22.9386 23.9253C22.6573 23.6474 22.4993 23.2705 22.4993 22.8775C22.4993 22.1187 21.6473 21.0675 19.9993 21.0675C18.3513 21.0675 17.4993 22.1187 17.4993 22.8775C17.4993 23.6362 18.3513 24.6894 19.9993 24.6894C22.7693 24.6894 25.4993 26.5862 25.4993 29.4651C25.4993 31.8164 23.6773 33.5118 21.4993 34.0551V34.0749C21.4993 34.4679 21.3412 34.8449 21.0599 35.1228C20.7786 35.4007 20.3971 35.5568 19.9993 35.5568C19.6014 35.5568 19.2199 35.4007 18.9386 35.1228C18.6573 34.8449 18.4993 34.4679 18.4993 34.0749V34.0551C16.3213 33.5137 14.4993 31.8164 14.4993 29.4651C14.4993 29.0721 14.6573 28.6952 14.9386 28.4172C15.2199 28.1393 15.6014 27.9832 15.9993 27.9832C16.3971 27.9832 16.7786 28.1393 17.0599 28.4172C17.3412 28.6952 17.4993 29.0721 17.4993 29.4651C17.4993 30.2239 18.3513 31.275 19.9993 31.275C21.6473 31.275 22.4993 30.2239 22.4993 29.4651C22.4993 28.7064 21.6473 27.6532 19.9993 27.6532C17.2293 27.6532 14.4993 25.7563 14.4993 22.8775C14.4993 20.5261 16.3213 18.8288 18.4993 18.2874V18.2677C18.4993 17.8746 18.6573 17.4977 18.9386 17.2198C19.2199 16.9419 19.6014 16.7857 19.9993 16.7857Z"
+                    fill="white"
+                  />
+                </svg>
+                <p class="section-pricing__price-section-title">License prices <span>/Volume</span></p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__pricing-card">
+                <div class="section-pricing__pricing-card--first-row">
+                  <div class="section-pricing__pricing-card--number-round">
+                    <p class="section-pricing__pricing-card--number-round--number">5-99</p>
+                    <p class="section-pricing__pricing-card--number-round--text">employee</p>
+                  </div>
+                  <div class="section-pricing__pricing-card-title">
+                    <p class="section-pricing__pricing-card-title--1">Volume License</p>
+                    <p class="section-pricing__pricing-card-title--2">Per users/per year</p>
+                  </div>
                 </div>
-                <p class="section-pricing__pricing-card--des">
-                  Ideal for individuals or small teams looking <br class="d-none d-xl-block" />
-                  for simple remote access.
-                </p>
-                <!-- <p class="section-pricing__pricing-card--method">Free</p> -->
-                <div class="section-pricing__pricing-card--middle__line"></div>
-                <div class="section-pricing__pricing-card--point__wrap">
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">Secure remote desktop connections.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">File transfer support.</p>
-                  </div>
-                  <div class="section-pricing__pricing-card--point">
-                    <div class="section-pricing__svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
-                        <path
-                          d="M12 5.77778V11.5833C12 11.8264 11.9034 12.0596 11.7315 12.2315C11.5596 12.4034 11.3264 12.5 11.0833 12.5H1.91667C1.67355 12.5 1.44039 12.4034 1.26849 12.2315C1.09658 12.0596 1 11.8264 1 11.5833V2.41667C1 2.17355 1.09658 1.94039 1.26849 1.76849C1.44039 1.59658 1.67355 1.5 1.91667 1.5H8.33333"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M4.05566 5.77789L7.11122 8.22233L11.6946 1.80566"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <p class="section-pricing__pricing-card--point__text">24/7 customer support.</p>
-                  </div>
+                <p class="section-pricing__pricing-card-des">Great for small business</p>
+                <p class="section-pricing__pricing-card-price">$9.99</p>
+                <div class="section-pricing__pricing-card-getdimo">
+                  <a class="section-pricing__pricing-card-getdimo-text">Get a demo</a>
+                  <a class="section-pricing__pricing-card-getdimo-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.26144 6.61102L1.65212 11.5L0.5 10.278L4.53325 6L0.5 1.72203L1.65212 0.5L6.26144 5.38898C6.41419 5.55105 6.5 5.77084 6.5 6C6.5 6.22916 6.41419 6.44895 6.26144 6.61102Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="section-pricing__pricing-card--bottom">
-                <a href="" class="section-pricing__pricing-card--downlod"> Get Started </a>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__pricing-card">
+                <div class="section-pricing__pricing-card--first-row">
+                  <div class="section-pricing__pricing-card--number-round">
+                    <p class="section-pricing__pricing-card--number-round--number">100-999</p>
+                    <p class="section-pricing__pricing-card--number-round--text">employee</p>
+                  </div>
+                  <div class="section-pricing__pricing-card-title">
+                    <p class="section-pricing__pricing-card-title--1">Volume License</p>
+                    <p class="section-pricing__pricing-card-title--2">Per users/per year</p>
+                  </div>
+                </div>
+                <p class="section-pricing__pricing-card-des">Great for small business</p>
+                <p class="section-pricing__pricing-card-price">$8.99</p>
+                <div class="section-pricing__pricing-card-getdimo">
+                  <a class="section-pricing__pricing-card-getdimo-text">Get a demo</a>
+                  <a class="section-pricing__pricing-card-getdimo-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.26144 6.61102L1.65212 11.5L0.5 10.278L4.53325 6L0.5 1.72203L1.65212 0.5L6.26144 5.38898C6.41419 5.55105 6.5 5.77084 6.5 6C6.5 6.22916 6.41419 6.44895 6.26144 6.61102Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="section-pricing__pricing-card">
+                <div class="section-pricing__pricing-card--first-row">
+                  <div class="section-pricing__pricing-card--number-round">
+                    <p class="section-pricing__pricing-card--number-round--number">1000 +</p>
+                    <p class="section-pricing__pricing-card--number-round--text">employee</p>
+                  </div>
+                  <div class="section-pricing__pricing-card-title">
+                    <p class="section-pricing__pricing-card-title--1">Volume License</p>
+                    <p class="section-pricing__pricing-card-title--2">Per users/per year</p>
+                  </div>
+                </div>
+                <p class="section-pricing__pricing-card-des">Great for small business</p>
+                <p class="section-pricing__pricing-card-price">$7.99</p>
+                <div class="section-pricing__pricing-card-getdimo">
+                  <a class="section-pricing__pricing-card-getdimo-text">Get a demo</a>
+                  <a class="section-pricing__pricing-card-getdimo-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.26144 6.61102L1.65212 11.5L0.5 10.278L4.53325 6L0.5 1.72203L1.65212 0.5L6.26144 5.38898C6.41419 5.55105 6.5 5.77084 6.5 6C6.5 6.22916 6.41419 6.44895 6.26144 6.61102Z"
+                        fill="#016FEF"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <script>
         document.addEventListener("DOMContentLoaded", () => {
-          const btnMonthly = document.getElementById("btn-monthly");
-          const btnYearly = document.getElementById("btn-yearly");
-          const monthlyRow = document.getElementById("monthly");
-          const yearlyRow = document.getElementById("yearly");
+          const basic = document.getElementById("btn-basic");
+          const professional = document.getElementById("btn-professional");
+          const enterprise = document.getElementById("btn-enterprise");
 
-          btnMonthly.addEventListener("click", () => {
-            togglePlan(btnMonthly, btnYearly, monthlyRow, yearlyRow);
+          const basic_row = document.getElementById("basic-row");
+          const professional_row = document.getElementById("professional-row");
+          const enterprise_row = document.getElementById("enterprise-row");
+
+          const buttons = [basic, professional, enterprise];
+          const rows = [basic_row, professional_row, enterprise_row];
+
+          // Sub-toggle buttons for Professional Package
+          const individualBtn = document.getElementById("btn-individual");
+          const volumeBtn = document.getElementById("btn-volume");
+          const individualRow = document.getElementById("individual-license-row");
+          const volumeRow = document.getElementById("volume-license-row");
+
+          buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+              togglePlan(index);
+            });
           });
 
-          btnYearly.addEventListener("click", () => {
-            togglePlan(btnYearly, btnMonthly, yearlyRow, monthlyRow);
+          // Toggle function for main package buttons
+          function togglePlan(activeIndex) {
+            buttons.forEach((btn, idx) => {
+              btn.classList.toggle("active", idx === activeIndex);
+              rows[idx].classList.toggle("active", idx === activeIndex);
+            });
+          }
+
+          // Add event listeners for the sub-toggle buttons
+          individualBtn.addEventListener("click", () => {
+            toggleLicense(true);
           });
 
-          function togglePlan(activeBtn, inactiveBtn, activeRow, inactiveRow) {
-            activeBtn.classList.add("active");
-            inactiveBtn.classList.remove("active");
-            activeRow.classList.add("active");
-            inactiveRow.classList.remove("active");
+          volumeBtn.addEventListener("click", () => {
+            toggleLicense(false);
+          });
+
+          // Toggle function for Professional sub-license buttons
+          function toggleLicense(isIndividual) {
+            individualBtn.classList.toggle("active", isIndividual);
+            volumeBtn.classList.toggle("active", !isIndividual);
+            individualRow.classList.toggle("active", isIndividual);
+            volumeRow.classList.toggle("active", !isIndividual);
           }
         });
       </script>
     </section>
+
     <section class="section-blog" id="blog">
       <div class="container">
         <div class="row">
