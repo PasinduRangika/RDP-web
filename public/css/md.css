@@ -71,4 +71,7 @@
   .section-single-blog__title {
     font-size: 44px;
   }
+  .section-footer__section.contact {
+    padding-top: 50px;
+  }
 }

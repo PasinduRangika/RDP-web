@@ -6,13 +6,6 @@
     margin: 20px 2%;
     background: #016fef;
   }
-  .section-pricing__pricing-card {
-    height: 490px;
-    padding: 20px 20px;
-  }
-  .section-pricing__pricing-card.pro {
-    height: 520px;
-  }
   .section-blog__blog-card {
     margin-bottom: 40px;
   }
@@ -46,5 +39,61 @@
   }
   .frame-7 {
     display: none;
+  }
+  .section-pricing__feature-card-title {
+    font-size: 20px;
+  }
+  .section-pricing__feature-card {
+    min-height: 350px;
+  }
+  .section-pricing__feature-card-border {
+    padding: 20px 25px;
+  }
+  .section-pricing__pricing-card--number-round--number {
+    font-size: 16px;
+  }
+  .section-pricing__pricing-card--number-round--text {
+    font-size: 10px;
+  }
+  .section-pricing__pricing-card-title--1 {
+    font-size: 18px;
+  }
+  .section-pricing__pricing-card--first-row {
+    flex-direction: column;
+  }
+  .section-pricing__pricing-card-des {
+    text-align: center;
+  }
+  .section-pricing__pricing-card-price {
+    font-size: 60px;
+    text-align: center;
+  }
+  .section-pricing__pricing-card-getdimo {
+    justify-content: center;
+  }
+  .section-footer__footer-logo-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .section-footer__section--title {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .section-footer__quick-link-link-items {
+    text-align: center;
+  }
+  .section-footer__contact-wrap {
+    flex-direction: column;
+  }
+  .section-footer_contact-details--title {
+    text-align: center;
+  }
+  .section-footer_contact-details--des {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .section-footer-des {
+    text-align: center;
+    padding-bottom: 30px;
   }
 }

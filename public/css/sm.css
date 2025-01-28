@@ -21,28 +21,6 @@
     font-size: 22px;
     text-align: center;
   }
-  .section-pricing__toggle-btn.active {
-    background: var(--main-liner-color);
-    display: flex;
-    width: 160px;
-    height: 70px;
-    padding: 14px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #f3f3f3;
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 40px;
-  }
-  .section-pricing__toggle-btn {
-    border: none;
-    background-color: #fff;
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    width: 160px;
-  }
   .section-pricing {
     margin: 20px 1%;
     background: #016fef;
@@ -142,5 +120,73 @@
   }
   .section-single-blog__read-time {
     font-size: 16px;
+  }
+  .section-pricing__toggle-btn-wrap {
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .section-pricing__toggle-btn {
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+    height: 70px;
+    max-width: none;
+    border-radius: 40px;
+    padding: 14px 10px;
+  }
+
+  .section-pricing__toggle-btn.active {
+    background: var(--main-liner-color);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #f3f3f3;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 40px;
+  }
+
+  .section-pricing__toggle-btn:nth-child(1) {
+    flex-basis: calc(50% - 5px);
+  }
+
+  .section-pricing__toggle-btn:nth-child(2) {
+    flex-basis: calc(50% - 5px);
+  }
+
+  .section-pricing__toggle-btn:nth-child(3) {
+    flex-basis: 100%;
+  }
+  .section-footer__footer-bottom-text {
+    text-align: center;
+    padding-bottom: 30px;
+    display: flex !important;
+  }
+  /* tos section */
+  .tos_title {
+    font-size: 48px;
+  }
+  .tos_list-des {
+    font-size: 18px;
+  }
+  .tos_list li {
+    font-size: 16px;
+  }
+  .tos_list-main li::before {
+    top: 5px;
+    width: 15px;
+    height: 15px;
+  }
+  .tos_list li::before {
+    top: 5px;
+  }
+  .tos_list-bottom-text {
+    font-size: 18px;
   }
 }
