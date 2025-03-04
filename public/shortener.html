@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f7fa;
+        margin: 0;
+      }
+
+      .container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #0b63e5;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0858c0;
+      }
+
+      .short-url {
+        margin-top: 20px;
+        background: #e7f7ff;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>URL Shortener</h1>
+      <input type="text" id="inputUrl" placeholder="Enter your URL here" />
+      <button onclick="shortenUrl()">Generate Short URL</button>
+      <div class="short-url" id="shortUrl"></div>
+    </div>
+
+    <script>
+      const baseUrl = "https://codimite.ai/";
+
+      function shortenUrl() {
+        const url = document.getElementById("inputUrl").value.trim();
+
+        if (url) {
+          // Generate a random short code
+          const shortCode = Math.random().toString(36).substring(2, 8);
+          const shortUrl = baseUrl + shortCode;
+
+          // Display the short URL
+          document.getElementById("shortUrl").innerHTML = `<a href="${url}" target="_blank">${shortUrl}</a>`;
+        } else {
+          document.getElementById("shortUrl").innerHTML = "Please enter a valid URL.";
+        }
+      }
+    </script>
+  </body>
+</html>

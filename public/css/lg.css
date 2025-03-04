@@ -96,4 +96,20 @@
     text-align: center;
     padding-bottom: 30px;
   }
+  .section-benefit .img-wrap img {
+    width: 200px;
+    height: auto;
+  }
+  .section-benefit .img-wrap-sm img {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: end;
+  }
+  .section-benefit .benefit-card {
+    height: 300px;
+  }
+  .section-benefit .benefit-card-sm {
+    height: 300px;
+  }
 }

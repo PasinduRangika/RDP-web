@@ -189,4 +189,10 @@
   .tos_list-bottom-text {
     font-size: 18px;
   }
+  .section-benefit .card-title {
+    text-align: center;
+  }
+  .section-benefit .card-des {
+    text-align: center;
+  }
 }
